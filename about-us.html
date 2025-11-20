@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About TradePilot - Our Mission to Democratize Professional Trading | Trailblazers Labs</title>
+    <meta name="description" content="Learn about TradePilot's mission to make professional-grade crypto trading signals accessible to everyone. Meet our team of expert traders and developers at Trailblazers Labs.">
+    <meta name="keywords" content="TradePilot about, Trailblazers Labs team, crypto trading company, algorithmic trading experts, trading signal platform">
+    <meta name="author" content="Trailblazers Labs">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="About TradePilot - Democratizing Professional Trading">
+    <meta property="og:description" content="Founded by expert traders and AI engineers, TradePilot brings institutional-grade trading signals to retail investors worldwide.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=630&fit=crop&auto=format">
+    <meta property="og:type" content="website">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+    <style>
+        :root {
+            --primary: #00D4FF;
+            --secondary: #1A1B23;
+  --accent: #FF6B6B;
+            --success: #00F5A0;
+         --warning: #FFB800;
+     --text-light: #B8BCC8;
+    --bg-dark: #0B0F17;
+  --bg-card: #1A1B23;
+            --border-light: rgba(255, 255, 255, 0.1);
+        }
+
+  body {
+     background: var(--bg-dark);
+   color: white;
+         font-family: 'Inter', sans-serif;
+       line-height: 1.6;
+        }
+
+        /* Navigation */
+        .navbar-custom {
+            background: rgba(11, 15, 23, 0.95);
+      backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-light);
+   padding: 1rem 0;
+        }
+
+        .navbar-brand {
+         font-weight: 800;
+    font-size: 1.8rem;
+  color: var(--primary) !important;
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+        }
+
+   .nav-link {
+            color: white !important;
+            font-weight: 500;
+     transition: all 0.3s ease;
+    }
+
+        .nav-link:hover {
+     color: var(--primary) !important;
+        }
+
+        /* Hero Section */
+     .about-hero {
+            background: linear-gradient(135deg, rgba(11, 15, 23, 0.95) 0%, rgba(26, 29, 58, 0.95) 100%),
+    url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&h=1080&fit=crop&auto=format');
+ background-size: cover;
+        background-position: center;
+ padding: 8rem 0 6rem;
+      margin-top: 76px;
+        }
+
+   .hero-title {
+    font-size: 3.5rem;
+            font-weight: 800;
+ background: linear-gradient(135deg, #ffffff 0%, var(--primary) 100%);
+       -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+        line-height: 1.1;
+        }
+
+        /* Team Member Cards */
+        .team-member {
+    background: var(--bg-card);
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+       text-align: center;
+            border: 1px solid var(--border-light);
+            transition: all 0.3s ease;
+  height: 100%;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+     border-color: var(--primary);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .team-photo {
+      width: 150px;
+       height: 150px;
+          border-radius: 50%;
+       border: 4px solid var(--primary);
+   object-fit: cover;
+            margin-bottom: 1.5rem;
+        }
+
+   .team-name {
+   font-size: 1.5rem;
+      font-weight: 700;
+    margin-bottom: 0.5rem;
+     color: white;
+        }
+
+        .team-title {
+  color: var(--primary);
+            font-weight: 600;
+         margin-bottom: 1rem;
+        }
+
+   .team-bio {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+     gap: 1rem;
+}
+
+     .social-links a {
+     width: 40px;
+      height: 40px;
+       background: rgba(0, 212, 255, 0.1);
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+   justify-content: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+      }
+
+        .social-links a:hover {
+            background: var(--primary);
+       color: var(--bg-dark);
+transform: scale(1.1);
+        }
+
+        /* Value Cards */
+        .value-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 2.5rem;
+      border: 1px solid var(--border-light);
+      text-align: center;
+      transition: all 0.3s ease;
+   height: 100%;
+        }
+
+ .value-card:hover {
+            transform: translateY(-5px);
+     border-color: var(--primary);
+      }
+
+   .value-icon {
+         width: 80px;
+            height: 80px;
+   background: linear-gradient(135deg, var(--primary) 0%, #0099CC 100%);
+    border-radius: 20px;
+       display: flex;
+   align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+          font-size: 2rem;
+  color: white;
+        }
+
+        /* Timeline */
+  .timeline {
+          position: relative;
+    padding: 2rem 0;
+        }
+
+        .timeline::before {
+    content: '';
+position: absolute;
+            left: 50%;
+         transform: translateX(-50%);
+            width: 2px;
+        height: 100%;
+       background: var(--primary);
+        }
+
+   .timeline-item {
+            position: relative;
+          margin-bottom: 3rem;
+        }
+
+      .timeline-content {
+    background: var(--bg-card);
+            border-radius: 12px;
+            padding: 2rem;
+border: 1px solid var(--border-light);
+   position: relative;
+    width: 45%;
+        }
+
+  .timeline-item:nth-child(odd) .timeline-content {
+  margin-left: auto;
+}
+
+        .timeline-date {
+     background: var(--primary);
+     color: var(--bg-dark);
+          padding: 0.5rem 1rem;
+            border-radius: 20px;
+   font-weight: 700;
+position: absolute;
+       left: 50%;
+            transform: translateX(-50%);
+            top: 1rem;
+        }
+
+        /* Stats */
+  .stat-item {
+    text-align: center;
+         padding: 2rem;
+            background: var(--bg-card);
+  border-radius: 16px;
+            border: 1px solid var(--border-light);
+        }
+
+        .stat-number {
+        font-size: 3rem;
+        font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+        }
+
+    .stat-label {
+  color: var(--text-light);
+            font-weight: 500;
+margin-top: 0.5rem;
+     }
+
+        /* Office Gallery */
+        .office-gallery {
+        display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+         margin: 2rem 0;
+      }
+
+        .office-image {
+      border-radius: 12px;
+       overflow: hidden;
+      transition: all 0.3s ease;
+        }
+
+  .office-image:hover {
+            transform: scale(1.05);
+        }
+
+        .office-image img {
+  width: 100%;
+     height: 250px;
+    object-fit: cover;
+        }
+
+        /* Buttons */
+        .btn-primary-gradient {
+            background: linear-gradient(135deg, var(--primary) 0%, #0099CC 100%);
+            border: none;
+  padding: 1rem 2rem;
+  font-weight: 700;
+   border-radius: 50px;
+       color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+         box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
+    display: inline-block;
+      }
+
+        .btn-primary-gradient:hover {
+        transform: translateY(-3px);
+         box-shadow: 0 12px 35px rgba(0, 212, 255, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Section Styles */
+        .section-padding {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+     font-size: 2.5rem;
+            font-weight: 700;
+  text-align: center;
+    margin-bottom: 1rem;
+            color: white;
+        }
+
+        .section-subtitle {
+         text-align: center;
+   color: var(--text-light);
+         font-size: 1.1rem;
+     margin-bottom: 3rem;
+   max-width: 600px;
+         margin-left: auto;
+       margin-right: auto;
+        }
+
+     /* Responsive */
+        @media (max-width: 768px) {
+   .hero-title {
+   font-size: 2.5rem;
+          }
+     
+       .about-hero {
+     padding: 4rem 0 2rem;
+            }
+     
+            .timeline::before {
+       left: 30px;
+ }
+    
+            .timeline-content {
+       width: calc(100% - 60px);
+       margin-left: 60px !important;
+            }
+  
+       .timeline-date {
+     left: 30px;
+            transform: none;
+     }
+ }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="trading-signals-new.html">
+            <i class="fab fa-bitcoin me-2"></i>
+   TradePilot
+     </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+       <span class="navbar-toggler-icon"></span>
+   </button>
+     
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+          <a class="nav-link" href="product.html">Product</a>
+                </li>
+       <li class="nav-item">
+          <a class="nav-link" href="live-signals.html">Live Signals</a>
+     </li>
+         <li class="nav-item">
+            <a class="nav-link" href="performance-new.html">Performance</a>
+             </li>
+         <li class="nav-item">
+          <a class="nav-link" href="pricing-new.html">Pricing</a>
+ </li>
+                <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Company</a>
+           <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
+   <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+     <li><a class="dropdown-item" href="press.html">Press</a></li>
+    <li><a class="dropdown-item" href="partners.html">Partners</a></li>
+</ul>
+    </li>
+     </ul>
+       
+   <div class="d-flex align-items-center gap-3">
+    <a href="careers.html" class="btn btn-outline-primary">Join Our Team</a>
+                <a href="pricing-new.html" class="btn btn-primary-gradient">Start Free Trial</a>
+     </div>
+   </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="about-hero">
+    <div class="container text-center">
+        <h1 class="hero-title">Democratizing Professional Trading</h1>
+        <p class="lead" style="color: var(--text-light); max-width: 700px; margin: 0 auto 3rem;">
+            TradePilot was founded with a simple mission: to make institutional-grade trading signals 
+    accessible to every trader, regardless of experience or capital size.
+        </p>
+    
+        <div class="row g-4 mt-4">
+      <div class="col-lg-3 col-md-6">
+    <div class="stat-item">
+   <div class="stat-number">2022</div>
+<div class="stat-label">Founded</div>
+           </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+           <div class="stat-item">
+         <div class="stat-number">25K+</div>
+          <div class="stat-label">Active Users</div>
+                </div>
+   </div>
+        <div class="col-lg-3 col-md-6">
+       <div class="stat-item">
+              <div class="stat-number">$2.4M+</div>
+            <div class="stat-label">Profits Generated</div>
+                </div>
+            </div>
+        <div class="col-lg-3 col-md-6">
+       <div class="stat-item">
+    <div class="stat-number">89%</div>
+   <div class="stat-label">Win Rate</div>
+     </div>
+    </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Story -->
+<section class="section-padding">
+    <div class="container">
+        <div class="row align-items-center">
+    <div class="col-lg-6">
+                <h2 class="section-title text-start">Our Story</h2>
+                <p style="color: var(--text-light); font-size: 1.1rem; margin-bottom: 2rem;">
+       Born from the frustration of seeing talented traders struggle with inconsistent results, 
+  TradePilot emerged as the solution to bridge the gap between institutional trading 
+          capabilities and retail accessibility.
+                </p>
+          
+    <p style="color: var(--text-light); margin-bottom: 1.5rem;">
+     Our founders, having worked at top-tier financial institutions like Goldman Sachs, 
+      Citadel, and Two Sigma, witnessed firsthand the power of algorithmic trading and 
+         advanced market analysis tools used by hedge funds and investment banks.
+    </p>
+           
+        <p style="color: var(--text-light); margin-bottom: 2rem;">
+        We believed that every trader deserved access to the same caliber of market intelligence, 
+          risk management, and signal generation that drives institutional success. 
+      TradePilot is the manifestation of that belief.
+ </p>
+           
+      <a href="careers.html" class="btn btn-primary-gradient">
+           <i class="fas fa-users me-2"></i>
+        Join Our Mission
+    </a>
+       </div>
+            
+            <div class="col-lg-6 mt-5 mt-lg-0">
+         <div class="office-gallery">
+         <div class="office-image">
+       <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=250&fit=crop&auto=format" alt="TradePilot Office">
+   </div>
+    <div class="office-image">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop&auto=format" alt="Trading Floor">
+         </div>
+   </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Values -->
+<section class="section-padding" style="background: rgba(26, 27, 35, 0.3);">
+    <div class="container">
+     <h2 class="section-title">Our Values</h2>
+  <p class="section-subtitle">
+      The principles that guide everything we do at TradePilot and Trailblazers Labs
+        </p>
+        
+        <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+    <div class="value-card">
+<div class="value-icon">
+    <i class="fas fa-shield-alt"></i>
+          </div>
+         <h4 class="mb-3">Transparency</h4>
+          <p style="color: var(--text-light);">
+   Every signal, every trade, every result is tracked and reported transparently. 
+          No cherry-picked results, no hidden losses. Complete accountability.
+     </p>
+                </div>
+            </div>
+        
+            <div class="col-lg-4 col-md-6">
+       <div class="value-card">
+   <div class="value-icon">
+        <i class="fas fa-rocket"></i>
+           </div>
+             <h4 class="mb-3">Innovation</h4>
+          <p style="color: var(--text-light);">
+       Continuously pushing the boundaries of what's possible in algorithmic trading, 
+   leveraging cutting-edge AI and machine learning technologies.
+         </p>
+            </div>
+          </div>
+     
+     <div class="col-lg-4 col-md-6">
+        <div class="value-card">
+         <div class="value-icon">
+        <i class="fas fa-users"></i>
+ </div>
+     <h4 class="mb-3">Accessibility</h4>
+               <p style="color: var(--text-light);">
+   Making professional-grade trading tools available to everyone, 
+     regardless of experience level or account size.
+                </p>
+       </div>
+        </div>
+         
+          <div class="col-lg-4 col-md-6">
+             <div class="value-card">
+     <div class="value-icon">
+                  <i class="fas fa-graduation-cap"></i>
+        </div>
+       <h4 class="mb-3">Education</h4>
+<p style="color: var(--text-light);">
+            Empowering our community with knowledge and insights to become 
+               better traders and make informed decisions.
+             </p>
+         </div>
+    </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="value-card">
+     <div class="value-icon">
+  <i class="fas fa-heart"></i>
+</div>
+        <h4 class="mb-3">Community</h4>
+       <p style="color: var(--text-light);">
+        Building a supportive ecosystem where traders can learn, 
+  share experiences, and grow together.
+         </p>
+            </div>
+            </div>
+         
+          <div class="col-lg-4 col-md-6">
+                <div class="value-card">
+          <div class="value-icon">
+               <i class="fas fa-star"></i>
+       </div>
+             <h4 class="mb-3">Excellence</h4>
+         <p style="color: var(--text-light);">
+Striving for the highest standards in everything we do, 
+   from signal accuracy to customer support.
+ </p>
+   </div>
+     </div>
+        </div>
+    </div>
+</section>
+
+<!-- Leadership Team -->
+<section class="section-padding">
+    <div class="container">
+        <h2 class="section-title">Leadership Team</h2>
+        <p class="section-subtitle">
+      Meet the experienced professionals behind TradePilot's success
+        </p>
+        
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+    <div class="team-member">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&auto=format" 
+       class="team-photo" alt="Michael Chen">
+               <h3 class="team-name">Michael Chen</h3>
+        <p class="team-title">CEO & Co-Founder</p>
+           <p class="team-bio">
+             Former Goldman Sachs Managing Director with 15+ years in quantitative trading. 
+     Led the development of algorithmic trading systems managing over $2B in assets.
+    </p>
+            <div class="social-links">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+     <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+     </div>
+    </div>
+ </div>
+    
+  <div class="col-lg-4 col-md-6">
+        <div class="team-member">
+   <img src="https://images.unsplash.com/photo-1494790108755-2616b332c371?w=300&h=300&fit=crop&auto=format" 
+  class="team-photo" alt="Sarah Rodriguez">
+       <h3 class="team-name">Dr. Sarah Rodriguez</h3>
+         <p class="team-title">CTO & Co-Founder</p>
+<p class="team-bio">
+      PhD in Machine Learning from MIT. Former Principal Engineer at Citadel, 
+    specialized in building high-frequency trading systems and predictive models.
+    </p>
+       <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-github"></i></a>
+ <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+             </div>
+</div>
+            
+  <div class="col-lg-4 col-md-6">
+      <div class="team-member">
+       <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&auto=format" 
+        class="team-photo" alt="David Kim">
+        <h3 class="team-name">David Kim</h3>
+          <p class="team-title">Head of Trading Research</p>
+              <p class="team-bio">
+       Former JPMorgan VP with 12+ years in derivatives and technical analysis. 
+ CMT Level III certified with expertise in multi-asset quantitative strategies.
+       </p>
+                 <div class="social-links">
+           <a href="#"><i class="fab fa-linkedin"></i></a>
+   <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+              </div>
+       </div>
+</div>
+  
+      <div class="col-lg-4 col-md-6">
+        <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop&auto=format" 
+            class="team-photo" alt="Emma Thompson">
+      <h3 class="team-name">Emma Thompson</h3>
+        <p class="team-title">Chief Risk Officer</p>
+         <p class="team-bio">
+      Former BlackRock Senior Risk Manager with expertise in portfolio optimization 
+  and quantitative risk models. FRM certified with 10+ years experience.
+        </p>
+     <div class="social-links">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+  <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fas fa-envelope"></i></a>
+       </div>
+  </div>
+     </div>
+            
+        <div class="col-lg-4 col-md-6">
+  <div class="team-member">
+               <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&auto=format" 
+           class="team-photo" alt="Lisa Zhang">
+                    <h3 class="team-name">Lisa Zhang</h3>
+      <p class="team-title">Head of Product</p>
+     <p class="team-bio">
+       Former Meta Product Manager with expertise in scaling platforms to millions of users. 
+ Stanford MBA with focus on fintech and user experience design.
+      </p>
+      <div class="social-links">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+                 </div>
+   </div>
+            </div>
+     
+          <div class="col-lg-4 col-md-6">
+        <div class="team-member">
+  <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=300&h=300&fit=crop&auto=format" 
+     class="team-photo" alt="James Wilson">
+         <h3 class="team-name">James Wilson</h3>
+    <p class="team-title">VP of Engineering</p>
+     <p class="team-bio">
+     Former Google Senior Staff Engineer with 12+ years building scalable systems. 
+        Led teams at Stripe and Coinbase, specializing in financial infrastructure.
+       </p>
+         <div class="social-links">
+   <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+   <a href="#"><i class="fas fa-envelope"></i></a>
+    </div>
+         </div>
+    </div>
+        </div>
+    </div>
+</section>
+
+<!-- Company Timeline -->
+<section class="section-padding" style="background: rgba(26, 27, 35, 0.3);">
+    <div class="container">
+        <h2 class="section-title">Our Journey</h2>
+   <p class="section-subtitle">
+       Key milestones in TradePilot's evolution from startup to industry leader
+  </p>
+        
+   <div class="timeline">
+            <div class="timeline-item">
+<div class="timeline-date">Q1 2022</div>
+       <div class="timeline-content">
+                  <h4 style="color: var(--primary);">Company Founded</h4>
+    <p style="color: var(--text-light);">
+        TradePilot was founded by former Wall Street veterans with a vision 
+       to democratize institutional-grade trading signals.
+</p>
+          </div>
+   </div>
+  
+         <div class="timeline-item">
+        <div class="timeline-date">Q3 2022</div>
+         <div class="timeline-content">
+ <h4 style="color: var(--primary);">Beta Platform Launch</h4>
+        <p style="color: var(--text-light);">
+     Launched our beta platform with 100 select traders, achieving 
+    85% win rate in the first 3 months of operation.
+       </p>
+       </div>
+        </div>
+            
+            <div class="timeline-item">
+        <div class="timeline-date">Q1 2023</div>
+    <div class="timeline-content">
+             <h4 style="color: var(--primary);">Series A Funding</h4>
+             <p style="color: var(--text-light);">
+         Raised $5M Series A led by Andreessen Horowitz to scale our 
+     AI infrastructure and expand the team.
+         </p>
+            </div>
+            </div>
+   
+     <div class="timeline-item">
+  <div class="timeline-date">Q3 2023</div>
+   <div class="timeline-content">
+        <h4 style="color: var(--primary);">Public Launch</h4>
+       <p style="color: var(--text-light);">
+        Officially launched TradePilot to the public, reaching 5,000 users 
+    within the first month and maintaining 87% win rate.
+     </p>
+   </div>
+    </div>
+            
+          <div class="timeline-item">
+    <div class="timeline-date">Q1 2024</div>
+     <div class="timeline-content">
+    <h4 style="color: var(--primary);">API Platform</h4>
+          <p style="color: var(--text-light);">
+       Launched comprehensive API platform, enabling developers and institutions 
+       to integrate our signals into their own applications.
+        </p>
+                </div>
+         </div>
+     
+            <div class="timeline-item">
+         <div class="timeline-date">Q4 2024</div>
+ <div class="timeline-content">
+            <h4 style="color: var(--primary);">25K+ Active Users</h4>
+   <p style="color: var(--text-light);">
+     Reached 25,000+ active users generating over $2.4M in profits, 
+       establishing TradePilot as a leader in crypto signal platforms.
+        </p>
+       </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section-padding" style="background: linear-gradient(135deg, rgba(11, 15, 23, 0.95) 0%, rgba(26, 29, 58, 0.95) 100%), url('https://images.unsplash.com/photo-1551434678-e076c223a692?w=1920&h=600&fit=crop&auto=format'); background-size: cover; background-position: center;">
+    <div class="container text-center">
+        <h2 class="display-4 fw-bold mb-3">Join Our Mission</h2>
+    <p class="lead mb-5" style="color: var(--text-light); max-width: 600px; margin: 0 auto;">
+      Be part of the future of trading. Whether as a user, team member, or partner, 
+  help us democratize professional trading for everyone.
+        </p>
+   
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+            <a href="pricing-new.html" class="btn btn-primary-gradient btn-lg">
+                <i class="fas fa-rocket me-2"></i>
+  Start Trading
+       </a>
+    <a href="careers.html" class="btn btn-outline-primary btn-lg">
+           <i class="fas fa-briefcase me-2"></i>
+                View Careers
+        </a>
+            <a href="partners.html" class="btn btn-outline-primary btn-lg">
+         <i class="fas fa-handshake me-2"></i>
+       Become Partner
+        </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5" style="background: var(--bg-card); border-top: 1px solid var(--border-light);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="d-flex align-items-center mb-3">
+          <i class="fab fa-bitcoin me-2" style="color: var(--primary); font-size: 1.5rem;"></i>
+      <h4 style="color: var(--primary); margin: 0;">TradePilot</h4>
+                </div>
+                <p style="color: var(--text-light);">
+            Professional crypto trading signals powered by AI. 
+   Built by Trailblazers Labs for the next generation of traders.
+                </p>
+              <small style="color: var(--text-light);">
+   &copy; 2024 Trailblazers Labs. All rights reserved.
+      </small>
+     </div>
+      
+   <div class="col-lg-2 col-md-6 mb-4">
+     <h5 class="mb-3">Product</h5>
+<ul class="list-unstyled">
+            <li class="mb-2"><a href="product.html" style="color: var(--text-light); text-decoration: none;">Features</a></li>
+      <li class="mb-2"><a href="live-signals.html" style="color: var(--text-light); text-decoration: none;">Live Signals</a></li>
+   <li class="mb-2"><a href="performance-new.html" style="color: var(--text-light); text-decoration: none;">Performance</a></li>
+       <li class="mb-2"><a href="api-access.html" style="color: var(--text-light); text-decoration: none;">API Access</a></li>
+         </ul>
+     </div>
+    
+      <div class="col-lg-2 col-md-6 mb-4">
+  <h5 class="mb-3">Company</h5>
+   <ul class="list-unstyled">
+   <li class="mb-2"><a href="about-us.html" style="color: var(--text-light); text-decoration: none;">About Us</a></li>
+             <li class="mb-2"><a href="careers.html" style="color: var(--text-light); text-decoration: none;">Careers</a></li>
+             <li class="mb-2"><a href="press.html" style="color: var(--text-light); text-decoration: none;">Press</a></li>
+        <li class="mb-2"><a href="partners.html" style="color: var(--text-light); text-decoration: none;">Partners</a></li>
+       </ul>
+     </div>
+            
+  <div class="col-lg-2 col-md-6 mb-4">
+     <h5 class="mb-3">Support</h5>
+                <ul class="list-unstyled">
+      <li class="mb-2"><a href="help-center.html" style="color: var(--text-light); text-decoration: none;">Help Center</a></li>
+       <li class="mb-2"><a href="contact-us.html" style="color: var(--text-light); text-decoration: none;">Contact Us</a></li>
+        <li class="mb-2"><a href="status-page.html" style="color: var(--text-light); text-decoration: none;">Status Page</a></li>
+    <li class="mb-2"><a href="bug-bounty.html" style="color: var(--text-light); text-decoration: none;">Bug Bounty</a></li>
+  </ul>
+            </div>
+      
+    <div class="col-lg-2 col-md-6 mb-4">
+ <h5 class="mb-3">Legal</h5>
+     <ul class="list-unstyled">
+          <li class="mb-2"><a href="terms-of-service.html" style="color: var(--text-light); text-decoration: none;">Terms of Service</a></li>
+     <li class="mb-2"><a href="privacy-policy.html" style="color: var(--text-light); text-decoration: none;">Privacy Policy</a></li>
+ <li class="mb-2"><a href="risk-disclaimer.html" style="color: var(--text-light); text-decoration: none;">Risk Disclaimer</a></li>
+               <li class="mb-2"><a href="compliance.html" style="color: var(--text-light); text-decoration: none;">Compliance</a></li>
+     </ul>
+        </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+// Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+         if (target) {
+              target.scrollIntoView({ behavior: 'smooth' });
+  }
+        });
+    });
+
+  // Navbar background on scroll
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar-custom');
+        if (window.scrollY > 100) {
+          navbar.style.background = 'rgba(11, 15, 23, 0.98)';
+        } else {
+     navbar.style.background = 'rgba(11, 15, 23, 0.95)';
+        }
+    });
+</script>
+
+</body>
+</html>

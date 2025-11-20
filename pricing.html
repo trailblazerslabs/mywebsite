@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TradePilot Pricing - Professional Trading Signal Plans | Trailblazers Labs</title>
+    <meta name="description" content="Choose from TradePilot's professional crypto trading signal plans. Free trial, Starter, Professional, and Enterprise options with transparent pricing and no hidden fees.">
+    <meta name="keywords" content="trading signals pricing, crypto signals subscription, trading platform cost, professional trading plans, algorithmic trading pricing">
+    <meta name="author" content="Trailblazers Labs">
+  
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="TradePilot Pricing - Professional Trading Signal Plans">
+    <meta property="og:description" content="Transparent pricing for professional crypto trading signals. Plans starting at $49/month with 7-day free trial. No hidden fees.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=630&fit=crop&auto=format">
+    <meta property="og:type" content="website">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+    --primary: #00D4FF;
+            --secondary: #1A1B23;
+       --accent: #FF6B6B;
+      --success: #00F5A0;
+            --warning: #FFB800;
+            --text-light: #B8BCC8;
+    --bg-dark: #0B0F17;
+            --bg-card: #1A1B23;
+        --border-light: rgba(255, 255, 255, 0.1);
+  }
+
+ body {
+      background: var(--bg-dark);
+       color: white;
+       font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+.navbar-custom {
+            background: rgba(11, 15, 23, 0.95);
+   backdrop-filter: blur(20px);
+border-bottom: 1px solid var(--border-light);
+ padding: 1rem 0;
+        }
+
+      .navbar-brand {
+font-weight: 800;
+   font-size: 1.8rem;
+      color: var(--primary) !important;
+            text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+   }
+
+        .nav-link {
+ color: white !important;
+       font-weight: 500;
+         transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+  color: var(--primary) !important;
+        }
+
+        /* Hero Section */
+        .pricing-hero {
+            background: linear-gradient(135deg, rgba(11, 15, 23, 0.95) 0%, rgba(26, 29, 58, 0.95) 100%),
+     url('https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1920&h=800&fit=crop&auto=format');
+   background-size: cover;
+            background-position: center;
+        padding: 8rem 0 6rem;
+        margin-top: 76px;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+   font-weight: 800;
+          background: linear-gradient(135deg, #ffffff 0%, var(--primary) 100%);
+       -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+   }
+
+        /* Pricing Cards */
+  .pricing-card {
+          background: var(--bg-card);
+         border-radius: 20px;
+     padding: 3rem 2.5rem;
+            border: 1px solid var(--border-light);
+  text-align: center;
+          transition: all 0.3s ease;
+      height: 100%;
+       position: relative;
+            overflow: hidden;
+      }
+
+  .pricing-card::before {
+        content: '';
+     position: absolute;
+     top: 0;
+            left: 0;
+          right: 0;
+      height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--success));
+        opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+
+        .pricing-card:hover::before {
+         opacity: 1;
+        }
+
+        .pricing-card.featured {
+     border: 2px solid var(--primary);
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.3);
+        }
+
+ .pricing-card.featured::before {
+            opacity: 1;
+        }
+
+        .plan-badge {
+       background: var(--primary);
+    color: var(--bg-dark);
+            padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+            font-weight: 700;
+      font-size: 0.8rem;
+            text-transform: uppercase;
+letter-spacing: 0.5px;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+      }
+
+        .plan-name {
+          font-size: 2rem;
+            font-weight: 800;
+            color: white;
+          margin-bottom: 1rem;
+        }
+
+        .plan-price {
+  font-size: 4rem;
+ font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+  margin-bottom: 0.5rem;
+   }
+
+   .plan-price-period {
+            color: var(--text-light);
+      font-size: 1rem;
+       margin-bottom: 2rem;
+     }
+
+        .plan-description {
+         color: var(--text-light);
+            margin-bottom: 2.5rem;
+            font-size: 1.1rem;
+        }
+
+ .feature-list {
+            list-style: none;
+            padding: 0;
+   margin: 2rem 0;
+     text-align: left;
+        }
+
+        .feature-list li {
+padding: 0.75rem 0;
+     border-bottom: 1px solid var(--border-light);
+     display: flex;
+         align-items: center;
+         color: var(--text-light);
+        }
+
+        .feature-list li:last-child {
+   border-bottom: none;
+        }
+
+        .feature-icon {
+     color: var(--success);
+         margin-right: 1rem;
+  font-size: 1.2rem;
+       min-width: 20px;
+        }
+
+        .feature-icon.premium {
+       color: var(--primary);
+        }
+
+        /* Buttons */
+  .btn-primary-gradient {
+            background: linear-gradient(135deg, var(--primary) 0%, #0099CC 100%);
+  border: none;
+    padding: 1.25rem 2.5rem;
+font-weight: 700;
+      border-radius: 50px;
+     color: white;
+    text-decoration: none;
+   transition: all 0.3s ease;
+     box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
+      display: inline-block;
+   width: 100%;
+        text-align: center;
+        }
+
+  .btn-primary-gradient:hover {
+         transform: translateY(-3px);
+   box-shadow: 0 12px 35px rgba(0, 212, 255, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+
+        .btn-outline-primary {
+  border: 2px solid var(--border-light);
+color: var(--text-light);
+     background: transparent;
+          padding: 1.25rem 2.5rem;
+            border-radius: 50px;
+   font-weight: 700;
+            transition: all 0.3s ease;
+            text-decoration: none;
+    display: inline-block;
+            width: 100%;
+  text-align: center;
+        }
+
+        .btn-outline-primary:hover {
+       border-color: var(--primary);
+      color: var(--primary);
+          transform: translateY(-2px);
+            text-decoration: none;
+   }
+
+        /* FAQ Section */
+        .faq-item {
+   background: var(--bg-card);
+       border-radius: 12px;
+            margin-bottom: 1rem;
+            border: 1px solid var(--border-light);
+     transition: all 0.3s ease;
+     }
+
+  .faq-item:hover {
+         border-color: var(--primary);
+        }
+
+        .faq-header {
+            padding: 1.5rem;
+            cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+ align-items: center;
+        }
+
+        .faq-content {
+padding: 0 1.5rem 1.5rem;
+    color: var(--text-light);
+       display: none;
+        }
+
+        .faq-content.show {
+    display: block;
+  }
+
+        /* Comparison Table */
+ .comparison-table {
+            background: var(--bg-card);
+     border-radius: 16px;
+          overflow: hidden;
+            border: 1px solid var(--border-light);
+            margin: 3rem 0;
+        }
+
+        .table-dark {
+          background: transparent;
+   --bs-table-bg: transparent;
+            --bs-table-color: white;
+    }
+
+        .table-dark th {
+            background: rgba(0, 0, 0, 0.3);
+          border-color: var(--border-light);
+       color: var(--primary);
+        font-weight: 700;
+            padding: 1.5rem 1rem;
+   text-align: center;
+        }
+
+        .table-dark td {
+      border-color: var(--border-light);
+       padding: 1.5rem 1rem;
+            text-align: center;
+            color: var(--text-light);
+        }
+
+        .table-dark .feature-name {
+      text-align: left;
+            font-weight: 600;
+          color: white;
+        }
+
+        /* Money Back Guarantee */
+ .guarantee-badge {
+        background: linear-gradient(135deg, var(--success) 0%, #00CC7A 100%);
+         color: var(--bg-dark);
+  padding: 1rem 2rem;
+    border-radius: 50px;
+       font-weight: 700;
+     display: inline-flex;
+            align-items: center;
+     gap: 0.5rem;
+            margin: 2rem 0;
+  }
+
+        /* Enterprise Contact */
+ .enterprise-contact {
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(255, 107, 107, 0.05) 100%);
+       border: 1px solid rgba(255, 107, 107, 0.3);
+         border-radius: 16px;
+    padding: 2.5rem;
+       text-align: center;
+            margin: 3rem 0;
+        }
+
+        .enterprise-icon {
+          font-size: 3rem;
+            color: var(--accent);
+         margin-bottom: 1rem;
+    }
+
+        /* Section Styles */
+ .section-padding {
+       padding: 5rem 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+     font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+         color: white;
+        }
+
+   .section-subtitle {
+            text-align: center;
+    color: var(--text-light);
+         font-size: 1.1rem;
+         margin-bottom: 3rem;
+    max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+      }
+
+      /* Billing Toggle */
+      .billing-toggle {
+            display: flex;
+            align-items: center;
+         justify-content: center;
+            gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+      .billing-option {
+  padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+       background: var(--bg-card);
+      border: 1px solid var(--border-light);
+            cursor: pointer;
+      transition: all 0.3s ease;
+      color: var(--text-light);
+        }
+
+        .billing-option.active {
+         background: var(--primary);
+            color: var(--bg-dark);
+            border-color: var(--primary);
+        }
+
+        .discount-badge {
+            background: var(--success);
+       color: var(--bg-dark);
+ padding: 0.25rem 0.75rem;
+   border-radius: 15px;
+ font-size: 0.8rem;
+            font-weight: 700;
+            margin-left: 0.5rem;
+  }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+       .hero-title {
+          font-size: 2.5rem;
+            }
+     .pricing-hero {
+  padding: 4rem 0 2rem;
+   }
+          .pricing-card.featured {
+ transform: none;
+          margin: 2rem 0;
+            }
+            .plan-price {
+   font-size: 3rem;
+            }
+        }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="trading-signals-new.html">
+ <i class="fab fa-bitcoin me-2"></i>
+     TradePilot
+ </a>
+   
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+    
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+       <li class="nav-item">
+   <a class="nav-link" href="product.html">Product</a>
+    </li>
+            <li class="nav-item">
+         <a class="nav-link" href="live-signals.html">Live Signals</a>
+     </li>
+      <li class="nav-item">
+    <a class="nav-link" href="performance-new.html">Performance</a>
+     </li>
+     <li class="nav-item">
+    <a class="nav-link active" href="pricing-new.html">Pricing</a>
+      </li>
+      <li class="nav-item">
+<a class="nav-link" href="api-access.html">API</a>
+       </li>
+</ul>
+            
+       <div class="d-flex align-items-center gap-3">
+       <a href="contact-us.html" class="btn btn-outline-primary">Contact Sales</a>
+   <a href="#pricing-plans" class="btn btn-primary-gradient">Start Free Trial</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="pricing-hero">
+    <div class="container text-center">
+  <h1 class="hero-title">Simple, Transparent Pricing</h1>
+        <p class="lead" style="color: var(--text-light); max-width: 700px; margin: 0 auto 3rem;">
+       Choose the perfect plan for your trading needs. No hidden fees, no long-term contracts. 
+  Start with a 7-day free trial and upgrade anytime.
+        </p>
+        
+     <div class="guarantee-badge">
+            <i class="fas fa-shield-check"></i>
+  30-Day Money Back Guarantee
+  </div>
+     
+ <!-- Billing Toggle -->
+        <div class="billing-toggle">
+    <div class="billing-option active" onclick="toggleBilling('monthly')">
+      Monthly
+   </div>
+      <div class="billing-option" onclick="toggleBilling('annual')">
+             Annual
+  <span class="discount-badge">Save 25%</span>
+     </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Plans -->
+<section id="pricing-plans" class="section-padding">
+    <div class="container">
+   <div class="row g-4 justify-content-center">
+   <!-- Free Trial -->
+            <div class="col-lg-3 col-md-6">
+      <div class="pricing-card">
+    <div class="plan-name">Free Trial</div>
+         <div class="plan-price">$0</div>
+      <div class="plan-price-period">7 days</div>
+    <div class="plan-description">
+ Perfect for trying out our signals with no risk
+    </div>
+          
+   <ul class="feature-list">
+         <li><i class="fas fa-check feature-icon"></i>5 trading signals</li>
+   <li><i class="fas fa-check feature-icon"></i>Basic analytics</li>
+    <li><i class="fas fa-check feature-icon"></i>Email support</li>
+            <li><i class="fas fa-check feature-icon"></i>Community access</li>
+       <li><i class="fas fa-check feature-icon"></i>Mobile app</li>
+           </ul>
+            
+         <a href="contact-us.html" class="btn btn-outline-primary">
+        Start Free Trial
+      </a>
+                </div>
+    </div>
+  
+    <!-- Starter -->
+         <div class="col-lg-3 col-md-6">
+      <div class="pricing-card">
+    <div class="plan-name">Starter</div>
+        <div class="plan-price monthly-price">$49</div>
+    <div class="plan-price annual-price" style="display: none;">$37</div>
+     <div class="plan-price-period">per month</div>
+        <div class="plan-description">
+      Great for individual traders getting started
+               </div>
+        
+   <ul class="feature-list">
+ <li><i class="fas fa-check feature-icon"></i>Unlimited signals</li>
+  <li><i class="fas fa-check feature-icon"></i>Telegram alerts</li>
+         <li><i class="fas fa-check feature-icon"></i>Email notifications</li>
+    <li><i class="fas fa-check feature-icon"></i>Performance tracking</li>
+         <li><i class="fas fa-check feature-icon"></i>Mobile app</li>
+            <li><i class="fas fa-check feature-icon"></i>Basic API access</li>
+ <li><i class="fas fa-check feature-icon"></i>Priority support</li>
+       </ul>
+        
+      <a href="contact-us.html" class="btn btn-primary-gradient">
+     Choose Starter
+            </a>
+           </div>
+            </div>
+       
+     <!-- Professional -->
+            <div class="col-lg-3 col-md-6">
+    <div class="pricing-card featured">
+        <div class="plan-badge">Most Popular</div>
+          <div class="plan-name">Professional</div>
+       <div class="plan-price monthly-price">$149</div>
+        <div class="plan-price annual-price" style="display: none;">$112</div>
+        <div class="plan-price-period">per month</div>
+     <div class="plan-description">
+    Perfect for serious traders and small teams
+       </div>
+              
+  <ul class="feature-list">
+            <li><i class="fas fa-check feature-icon premium"></i>Everything in Starter</li>
+         <li><i class="fas fa-check feature-icon premium"></i>Advanced analytics</li>
+         <li><i class="fas fa-check feature-icon premium"></i>Risk management tools</li>
+      <li><i class="fas fa-check feature-icon premium"></i>Portfolio tracking</li>
+   <li><i class="fas fa-check feature-icon premium"></i>Custom webhooks</li>
+   <li><i class="fas fa-check feature-icon premium"></i>Advanced API access</li>
+       <li><i class="fas fa-check feature-icon premium"></i>Private Discord channel</li>
+          <li><i class="fas fa-check feature-icon premium"></i>Weekly strategy calls</li>
+          <li><i class="fas fa-check feature-icon premium"></i>24/7 priority support</li>
+            </ul>
+ 
+        <a href="contact-us.html" class="btn btn-primary-gradient">
+        Choose Professional
+      </a>
+      </div>
+       </div>
+          
+      <!-- Enterprise -->
+        <div class="col-lg-3 col-md-6">
+         <div class="pricing-card">
+<div class="plan-name">Enterprise</div>
+        <div class="plan-price">Custom</div>
+              <div class="plan-price-period">contact sales</div>
+      <div class="plan-description">
+            For institutions and large trading teams
+           </div>
+     
+             <ul class="feature-list">
+  <li><i class="fas fa-check feature-icon"></i>Everything in Professional</li>
+   <li><i class="fas fa-check feature-icon"></i>White-label solutions</li>
+         <li><i class="fas fa-check feature-icon"></i>Custom integrations</li>
+   <li><i class="fas fa-check feature-icon"></i>Dedicated account manager</li>
+    <li><i class="fas fa-check feature-icon"></i>SLA guarantees</li>
+          <li><i class="fas fa-check feature-icon"></i>On-premise deployment</li>
+     <li><i class="fas fa-check feature-icon"></i>Custom reporting</li>
+        <li><i class="fas fa-check feature-icon"></i>Training & onboarding</li>
+ <li><i class="fas fa-check feature-icon"></i>24/7 dedicated support</li>
+           </ul>
+         
+        <a href="contact-us.html" class="btn btn-outline-primary">
+ Contact Sales
+        </a>
+   </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- Feature Comparison Table -->
+<section class="section-padding" style="background: rgba(26, 27, 35, 0.3);">
+    <div class="container">
+        <h2 class="section-title">Feature Comparison</h2>
+        <p class="section-subtitle">
+ Compare all features across our different pricing plans
+ </p>
+        
+        <div class="comparison-table">
+            <table class="table table-dark mb-0">
+ <thead>
+     <tr>
+    <th style="text-align: left;">Features</th>
+          <th>Free Trial</th>
+     <th>Starter</th>
+        <th>Professional</th>
+ <th>Enterprise</th>
+         </tr>
+                </thead>
+    <tbody>
+       <tr>
+       <td class="feature-name">Trading Signals</td>
+            <td>5 signals</td>
+               <td>Unlimited</td>
+           <td>Unlimited</td>
+          <td>Unlimited</td>
+      </tr>
+     <tr>
+          <td class="feature-name">Signal Accuracy</td>
+          <td>89%</td>
+       <td>89%</td>
+          <td>89%</td>
+    <td>89%</td>
+        </tr>
+              <tr>
+                <td class="feature-name">Telegram Alerts</td>
+    <td><i class="fas fa-times" style="color: var(--accent);"></i></td>
+         <td><i class="fas fa-check" style="color: var(--success);"></i></td>
+      <td><i class="fas fa-check" style="color: var(--success);"></i></td>
+       <td><i class="fas fa-check" style="color: var(--success);"></i></td>
+          </tr>
+   <tr>
+ <td class="feature-name">Email Notifications</td>
+       <td><i class="fas fa-check" style="color: var(--success);"></i></td>
+      <td><i class="fas fa-check" style="color: var(--success);"></i></td>
+   <td><i class="fas fa-check" style="color: var(--success);"></i></td>
+    <td><i class="fas fa-check" style="color: var(--success);"></i></td>
+         </tr>
+    <tr>
+          <td class="feature-name">API Access</td>
+              <td><i class="fas fa-times" style="color: var(--accent);"></i></td>
+   <td>Basic</td>
+            <td>Advanced</td>
+      <td>Enterprise</td>
+       </tr>
+          <tr>
+       <td class="feature-name">Risk Management Tools</td>
+    <td><i class="fas fa-times" style="color: var(--accent);"></i></td>
+   <td><i class="fas fa-times" style="color: var(--accent);"></i></td>
+    <td><i class="fas fa-check" style="color: var(--success);"></i></td>
+          <td><i class="fas fa-check" style="color: var(--success);"></i></td>
+               </tr>
+           <tr>
+   <td class="feature-name">Portfolio Tracking</td>
+   <td><i class="fas fa-times" style="color: var(--accent);"></i></td>
+            <td><i class="fas fa-times" style="color: var(--accent);"></i></td>
+   <td><i class="fas fa-check" style="color: var(--success);"></i></td>
+         <td><i class="fas fa-check" style="color: var(--success);"></i></td>
+       </tr>
+      <tr>
+      <td class="feature-name">Custom Webhooks</td>
+  <td><i class="fas fa-times" style="color: var(--accent);"></i></td>
+             <td><i class="fas fa-times" style="color: var(--accent);"></i></td>
+        <td><i class="fas fa-check" style="color: var(--success);"></i></td>
+       <td><i class="fas fa-check" style="color: var(--success);"></i></td>
+    </tr>
+        <tr>
+          <td class="feature-name">Private Discord</td>
+<td><i class="fas fa-times" style="color: var(--accent);"></i></td>
+             <td><i class="fas fa-times" style="color: var(--accent);"></i></td>
+   <td><i class="fas fa-check" style="color: var(--success);"></i></td>
+            <td><i class="fas fa-check" style="color: var(--success);"></i></td>
+        </tr>
+      <tr>
+     <td class="feature-name">White-label Solutions</td>
+ <td><i class="fas fa-times" style="color: var(--accent);"></i></td>
+        <td><i class="fas fa-times" style="color: var(--accent);"></i></td>
+        <td><i class="fas fa-times" style="color: var(--accent);"></i></td>
+     <td><i class="fas fa-check" style="color: var(--success);"></i></td>
+    </tr>
+          <tr>
+       <td class="feature-name">Dedicated Support</td>
+          <td><i class="fas fa-times" style="color: var(--accent);"></i></td>
+         <td><i class="fas fa-times" style="color: var(--accent);"></i></td>
+ <td>24/7</td>
+          <td>24/7 + Manager</td>
+ </tr>
+      </tbody>
+    </table>
+     </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section-padding">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+         Common questions about our pricing and service
+   </p>
+      
+     <div class="row justify-content-center">
+  <div class="col-lg-8">
+      <div class="faq-item">
+     <div class="faq-header" onclick="toggleFaq(this)">
+        <h5 style="margin: 0; color: white;">Is there really a free trial?</h5>
+     <i class="fas fa-chevron-down" style="color: var(--primary);"></i>
+      </div>
+     <div class="faq-content">
+  Yes! Our 7-day free trial gives you access to 5 trading signals with no credit card required. 
+      You'll get the full TradePilot experience to see how our signals can improve your trading performance.
+            </div>
+    </div>
+     
+           <div class="faq-item">
+        <div class="faq-header" onclick="toggleFaq(this)">
+      <h5 style="margin: 0; color: white;">Can I cancel anytime?</h5>
+          <i class="fas fa-chevron-down" style="color: var(--primary);"></i>
+    </div>
+           <div class="faq-content">
+       Absolutely. You can cancel your subscription at any time with no cancellation fees. 
+             Your subscription will remain active until the end of your current billing period.
+          </div>
+            </div>
+      
+     <div class="faq-item">
+      <div class="faq-header" onclick="toggleFaq(this)">
+        <h5 style="margin: 0; color: white;">What's included in the money-back guarantee?</h5>
+             <i class="fas fa-chevron-down" style="color: var(--primary);"></i>
+              </div>
+       <div class="faq-content">
+        If you're not satisfied with TradePilot within the first 30 days, we'll refund 100% of your money, 
+              no questions asked. We're confident in our service and want you to trade risk-free.
+         </div>
+         </div>
+        
+       <div class="faq-item">
+        <div class="faq-header" onclick="toggleFaq(this)">
+      <h5 style="margin: 0; color: white;">How accurate are your trading signals?</h5>
+  <i class="fas fa-chevron-down" style="color: var(--primary);"></i>
+     </div>
+       <div class="faq-content">
+     Our signals maintain an 89% win rate across all timeframes and market conditions. 
+          All performance data is tracked transparently and available on our performance page.
+      </div>
+             </div>
+                
+     <div class="faq-item">
+         <div class="faq-header" onclick="toggleFaq(this)">
+      <h5 style="margin: 0; color: white;">Do you offer educational content?</h5>
+      <i class="fas fa-chevron-down" style="color: var(--primary);"></i>
+         </div>
+         <div class="faq-content">
+      Yes! Professional and Enterprise subscribers get access to weekly strategy calls, 
+  private Discord channels with expert traders, and comprehensive trading education materials.
+             </div>
+         </div>
+                
+     <div class="faq-item">
+ <div class="faq-header" onclick="toggleFaq(this)">
+             <h5 style="margin: 0; color: white;">What payment methods do you accept?</h5>
+     <i class="fas fa-chevron-down" style="color: var(--primary);"></i>
+                 </div>
+       <div class="faq-content">
+    We accept all major credit cards, PayPal, and cryptocurrency payments (Bitcoin, Ethereum, USDT). 
+             All transactions are processed securely with 256-bit SSL encryption.
+   </div>
+          </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Enterprise Contact -->
+<section class="section-padding" style="background: rgba(26, 27, 35, 0.3);">
+    <div class="container">
+   <div class="row justify-content-center">
+  <div class="col-lg-8">
+             <div class="enterprise-contact">
+            <div class="enterprise-icon">
+    <i class="fas fa-building"></i>
+         </div>
+       <h3 style="color: white; margin-bottom: 1rem;">Enterprise Solutions</h3>
+    <p style="color: var(--text-light); font-size: 1.1rem; margin-bottom: 2rem;">
+ Looking for custom solutions, white-label platforms, or institutional-grade features? 
+         Our enterprise team will work with you to create the perfect solution for your organization.
+                    </p>
+   
+   <div class="row g-3 mb-3">
+    <div class="col-md-6">
+                <div style="color: var(--text-light);">
+    <i class="fas fa-check me-2" style="color: var(--success);"></i>
+             Custom pricing models
+    </div>
+        </div>
+     <div class="col-md-6">
+        <div style="color: var(--text-light);">
+           <i class="fas fa-check me-2" style="color: var(--success);"></i>
+                 Dedicated infrastructure
+      </div>
+               </div>
+            <div class="col-md-6">
+          <div style="color: var(--text-light);">
+       <i class="fas fa-check me-2" style="color: var(--success);"></i>
+             White-label solutions
+         </div>
+       </div>
+           <div class="col-md-6">
+    <div style="color: var(--text-light);">
+    <i class="fas fa-check me-2" style="color: var(--success);"></i>
+      24/7 dedicated support
+   </div>
+   </div>
+    </div>
+           
+  <a href="contact-us.html" class="btn btn-primary-gradient">
+             <i class="fas fa-phone me-2"></i>
+       Contact Enterprise Sales
+  </a>
+        </div>
+            </div>
+      </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section-padding" style="background: linear-gradient(135deg, rgba(11, 15, 23, 0.95) 0%, rgba(26, 29, 58, 0.95) 100%), url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1920&h=600&fit=crop&auto=format'); background-size: cover; background-position: center;">
+    <div class="container text-center">
+        <h2 class="display-4 fw-bold mb-3">Start Your Trading Success Today</h2>
+ <p class="lead mb-5" style="color: var(--text-light); max-width: 600px; margin: 0 auto;">
+            Join 25,000+ traders who've transformed their trading with TradePilot's professional signals. 
+       Start your free trial today and see the difference quality signals make.
+        </p>
+     
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+    <a href="contact-us.html" class="btn btn-primary-gradient btn-lg">
+ <i class="fas fa-rocket me-2"></i>
+          Start 7-Day Free Trial
+            </a>
+ <a href="performance-new.html" class="btn btn-outline-primary btn-lg">
+            <i class="fas fa-chart-line me-2"></i>
+                View Performance
+        </a>
+    </div>
+        
+        <div class="mt-4">
+         <small style="color: var(--text-light);">
+      <i class="fas fa-shield-alt me-2"></i>
+              No credit card required � 30-day money back guarantee � Cancel anytime
+    </small>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5" style="background: var(--bg-card); border-top: 1px solid var(--border-light);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+   <div class="d-flex align-items-center mb-3">
+<i class="fab fa-bitcoin me-2" style="color: var(--primary); font-size: 1.5rem;"></i>
+          <h4 style="color: var(--primary); margin: 0;">TradePilot</h4>
+                </div>
+      <p style="color: var(--text-light);">
+          Professional crypto trading signals powered by AI. 
+      Built by Trailblazers Labs for the next generation of traders.
+     </p>
+   <small style="color: var(--text-light);">
+ &copy; 2024 Trailblazers Labs. All rights reserved.
+    </small>
+            </div>
+     
+  <div class="col-lg-2 col-md-6 mb-4">
+            <h5 class="mb-3">Product</h5>
+     <ul class="list-unstyled">
+        <li class="mb-2"><a href="product.html" style="color: var(--text-light); text-decoration: none;">Features</a></li>
+         <li class="mb-2"><a href="live-signals.html" style="color: var(--text-light); text-decoration: none;">Live Signals</a></li>
+            <li class="mb-2"><a href="performance-new.html" style="color: var(--text-light); text-decoration: none;">Performance</a></li>
+        <li class="mb-2"><a href="api-access.html" style="color: var(--text-light); text-decoration: none;">API Access</a></li>
+           </ul>
+     </div>
+   
+    <div class="col-lg-2 col-md-6 mb-4">
+                <h5 class="mb-3">Company</h5>
+     <ul class="list-unstyled">
+      <li class="mb-2"><a href="about-us.html" style="color: var(--text-light); text-decoration: none;">About Us</a></li>
+        <li class="mb-2"><a href="careers.html" style="color: var(--text-light); text-decoration: none;">Careers</a></li>
+ <li class="mb-2"><a href="press.html" style="color: var(--text-light); text-decoration: none;">Press</a></li>
+        <li class="mb-2"><a href="partners.html" style="color: var(--text-light); text-decoration: none;">Partners</a></li>
+        </ul>
+            </div>
+            
+            <div class="col-lg-2 col-md-6 mb-4">
+              <h5 class="mb-3">Support</h5>
+   <ul class="list-unstyled">
+         <li class="mb-2"><a href="help-center.html" style="color: var(--text-light); text-decoration: none;">Help Center</a></li>
+         <li class="mb-2"><a href="contact-us.html" style="color: var(--text-light); text-decoration: none;">Contact Us</a></li>
+         <li class="mb-2"><a href="status-page.html" style="color: var(--text-light); text-decoration: none;">Status Page</a></li>
+          <li class="mb-2"><a href="bug-bounty.html" style="color: var(--text-light); text-decoration: none;">Bug Bounty</a></li>
+ </ul>
+  </div>
+      
+   <div class="col-lg-2 col-md-6 mb-4">
+ <h5 class="mb-3">Legal</h5>
+       <ul class="list-unstyled">
+            <li class="mb-2"><a href="terms-of-service.html" style="color: var(--text-light); text-decoration: none;">Terms of Service</a></li>
+   <li class="mb-2"><a href="privacy-policy.html" style="color: var(--text-light); text-decoration: none;">Privacy Policy</a></li>
+          <li class="mb-2"><a href="risk-disclaimer.html" style="color: var(--text-light); text-decoration: none;">Risk Disclaimer</a></li>
+          <li class="mb-2"><a href="compliance.html" style="color: var(--text-light); text-decoration: none;">Compliance</a></li>
+                </ul>
+          </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Billing toggle functionality
+    function toggleBilling(type) {
+      const monthlyOptions = document.querySelectorAll('.billing-option')[0];
+        const annualOptions = document.querySelectorAll('.billing-option')[1];
+        const monthlyPrices = document.querySelectorAll('.monthly-price');
+        const annualPrices = document.querySelectorAll('.annual-price');
+      
+        if (type === 'monthly') {
+         monthlyOptions.classList.add('active');
+      annualOptions.classList.remove('active');
+  monthlyPrices.forEach(price => price.style.display = 'block');
+            annualPrices.forEach(price => price.style.display = 'none');
+   } else {
+   monthlyOptions.classList.remove('active');
+ annualOptions.classList.add('active');
+      monthlyPrices.forEach(price => price.style.display = 'none');
+            annualPrices.forEach(price => price.style.display = 'block');
+        }
+    }
+
+    // FAQ toggle functionality
+    function toggleFaq(element) {
+      const content = element.nextElementSibling;
+      const icon = element.querySelector('i');
+        
+        if (content.classList.contains('show')) {
+        content.classList.remove('show');
+            icon.style.transform = 'rotate(0deg)';
+      } else {
+// Close all other FAQs
+            document.querySelectorAll('.faq-content.show').forEach(openContent => {
+                openContent.classList.remove('show');
+        openContent.previousElementSibling.querySelector('i').style.transform = 'rotate(0deg)';
+            });
+     
+         // Open this FAQ
+            content.classList.add('show');
+ icon.style.transform = 'rotate(180deg)';
+        }
+    }
+
+    // Smooth scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+     e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+   target.scrollIntoView({ behavior: 'smooth' });
+            }
+      });
+});
+
+    // Navbar background on scroll
+    window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar-custom');
+     if (window.scrollY > 100) {
+            navbar.style.background = 'rgba(11, 15, 23, 0.98)';
+        } else {
+    navbar.style.background = 'rgba(11, 15, 23, 0.95)';
+        }
+    });
+</script>
+
+</body>
+</html>

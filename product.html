@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TradePilot Product - Professional Crypto Trading Signals Platform | Trailblazers Labs</title>
+    <meta name="description" content="Discover TradePilot's advanced crypto trading signals platform. AI-powered analysis, real-time alerts, risk management tools, and transparent performance tracking for professional traders.">
+    <meta name="keywords" content="crypto trading signals, AI trading platform, algorithmic trading, bitcoin signals, ethereum trading, cryptocurrency alerts, trading automation">
+    <meta name="author" content="Trailblazers Labs">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="TradePilot Product - Professional Crypto Trading Signals">
+    <meta property="og:description" content="Advanced crypto trading platform with AI-powered signals, real-time alerts, and professional risk management tools.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=630&fit=crop&auto=format">
+  <meta property="og:type" content="website">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #00D4FF;
+            --secondary: #1A1B23;
+--accent: #FF6B6B;
+    --success: #00F5A0;
+         --warning: #FFB800;
+            --text-light: #B8BCC8;
+          --bg-dark: #0B0F17;
+      --bg-card: #1A1B23;
+         --border-light: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+     background: var(--bg-dark);
+            color: white;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+  }
+
+      /* Navigation */
+        .navbar-custom {
+            background: rgba(11, 15, 23, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-light);
+       padding: 1rem 0;
+        }
+
+        .navbar-brand {
+         font-weight: 800;
+            font-size: 1.8rem;
+            color: var(--primary) !important;
+            text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+        }
+
+        .nav-link {
+        color: white !important;
+            font-weight: 500;
+ transition: all 0.3s ease;
+     }
+
+ .nav-link:hover {
+            color: var(--primary) !important;
+        }
+
+        /* Hero Section */
+     .product-hero {
+     background: linear-gradient(135deg, rgba(11, 15, 23, 0.95) 0%, rgba(26, 29, 58, 0.95) 100%),
+      url('https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1920&h=1080&fit=crop&auto=format');
+            background-size: cover;
+        background-position: center;
+  padding: 8rem 0 6rem;
+ margin-top: 76px;
+        }
+
+     .hero-title {
+font-size: 4rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffffff 0%, var(--primary) 100%);
+            -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+    line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+    color: var(--text-light);
+            margin-bottom: 3rem;
+        }
+
+        /* Feature Cards */
+        .feature-card {
+   background: var(--bg-card);
+    border-radius: 16px;
+      padding: 2.5rem;
+            border: 1px solid var(--border-light);
+ transition: all 0.3s ease;
+            height: 100%;
+        }
+
+ .feature-card:hover {
+          transform: translateY(-10px);
+     border-color: var(--primary);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+ }
+
+        .feature-icon {
+    width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary) 0%, #0099CC 100%);
+            border-radius: 20px;
+   display: flex;
+            align-items: center;
+       justify-content: center;
+     margin-bottom: 1.5rem;
+ font-size: 2rem;
+        color: white;
+        }
+
+        /* Product Demo */
+        .product-demo {
+            background: var(--bg-card);
+            border-radius: 20px;
+     padding: 2rem;
+            border: 1px solid var(--border-light);
+margin: 3rem 0;
+        }
+
+        .demo-screen {
+ background: var(--bg-dark);
+ border-radius: 12px;
+            padding: 1.5rem;
+     border: 1px solid var(--border-light);
+font-family: 'Courier New', monospace;
+        }
+
+        /* Tech Stack */
+        .tech-item {
+            background: var(--bg-card);
+          border-radius: 12px;
+   padding: 1.5rem;
+         text-align: center;
+          border: 1px solid var(--border-light);
+          transition: all 0.3s ease;
+ }
+
+        .tech-item:hover {
+        transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .tech-logo {
+            font-size: 3rem;
+          margin-bottom: 1rem;
+        }
+
+        /* Buttons */
+        .btn-primary-gradient {
+       background: linear-gradient(135deg, var(--primary) 0%, #0099CC 100%);
+            border: none;
+  padding: 1rem 2rem;
+            font-weight: 700;
+       border-radius: 50px;
+   color: white;
+   text-decoration: none;
+     transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
+     display: inline-block;
+        }
+
+        .btn-primary-gradient:hover {
+   transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(0, 212, 255, 0.4);
+        color: white;
+   text-decoration: none;
+        }
+
+        .btn-outline-primary {
+     border: 2px solid var(--primary);
+     color: var(--primary);
+          background: transparent;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+          font-weight: 700;
+    transition: all 0.3s ease;
+            text-decoration: none;
+   display: inline-block;
+   }
+
+   .btn-outline-primary:hover {
+        background: var(--primary);
+            color: var(--bg-dark);
+  transform: translateY(-2px);
+            text-decoration: none;
+   }
+
+        /* Section Styles */
+        .section-padding {
+ padding: 5rem 0;
+ }
+
+        .section-title {
+       font-size: 2.5rem;
+            font-weight: 700;
+     text-align: center;
+            margin-bottom: 1rem;
+         color: white;
+   }
+
+        .section-subtitle {
+ text-align: center;
+     color: var(--text-light);
+    font-size: 1.1rem;
+         margin-bottom: 3rem;
+       max-width: 600px;
+     margin-left: auto;
+            margin-right: auto;
+      }
+
+        /* Live Demo Feed */
+        .live-feed {
+            background: var(--bg-dark);
+      border-radius: 12px;
+            padding: 1.5rem;
+  border: 1px solid var(--border-light);
+  height: 400px;
+       overflow-y: auto;
+        }
+
+        .signal-item {
+        background: rgba(255, 255, 255, 0.02);
+      border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+          border-left: 4px solid var(--success);
+    }
+
+.signal-item.sell {
+            border-left-color: var(--accent);
+      }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+          .hero-title {
+  font-size: 2.5rem;
+     }
+   .product-hero {
+          padding: 4rem 0 2rem;
+          }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+    <div class="container">
+<a class="navbar-brand d-flex align-items-center" href="trading-signals-new.html">
+       <i class="fab fa-bitcoin me-2"></i>
+         TradePilot
+     </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+      </button>
+   
+    <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+     <li class="nav-item">
+         <a class="nav-link active" href="product.html">Product</a>
+     </li>
+           <li class="nav-item">
+      <a class="nav-link" href="live-signals.html">Live Signals</a>
+  </li>
+    <li class="nav-item">
+   <a class="nav-link" href="performance-new.html">Performance</a>
+             </li>
+   <li class="nav-item">
+      <a class="nav-link" href="pricing-new.html">Pricing</a>
+                </li>
+           <li class="nav-item">
+        <a class="nav-link" href="api-access.html">API</a>
+       </li>
+            </ul>
+            
+         <div class="d-flex align-items-center gap-3">
+     <a href="contact-us.html" class="btn btn-outline-primary">Contact Sales</a>
+            <a href="pricing-new.html" class="btn btn-primary-gradient">Start Free Trial</a>
+     </div>
+ </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="product-hero">
+    <div class="container">
+  <div class="row align-items-center">
+       <div class="col-lg-6">
+            <h1 class="hero-title">AI-Powered Crypto Trading Platform</h1>
+      <p class="hero-subtitle">
+          Advanced algorithmic trading signals with institutional-grade analysis, 
+        real-time alerts, and comprehensive risk management tools.
+             </p>
+      
+                <div class="d-flex gap-3 flex-wrap">
+             <a href="#demo" class="btn btn-primary-gradient btn-lg">
+           <i class="fas fa-play me-2"></i>
+      Watch Demo
+  </a>
+    <a href="pricing-new.html" class="btn btn-outline-primary btn-lg">
+              <i class="fas fa-rocket me-2"></i>
+       Start Free Trial
+         </a>
+            </div>
+ </div>
+    
+          <div class="col-lg-6 mt-5 mt-lg-0">
+ <div class="live-feed">
+       <h5 style="color: var(--primary); margin-bottom: 1rem;">
+            <i class="fas fa-broadcast-tower me-2"></i>
+         Live Signal Feed
+  </h5>
+     
+    <div class="signal-item">
+       <div class="d-flex justify-content-between align-items-center">
+   <div>
+  <strong style="color: var(--success);">BUY BTC/USDT</strong>
+             <div style="font-size: 0.9rem; color: var(--text-light);">
+      Entry: $43,250 • Target: $51,200 • SL: $40,800
+        </div>
+         </div>
+      <span style="color: var(--success); font-weight: 600;">+18.4%</span>
+           </div>
+              </div>
+       
+          <div class="signal-item sell">
+<div class="d-flex justify-content-between align-items-center">
+        <div>
+     <strong style="color: var(--accent);">SELL ETH/USDT</strong>
+                   <div style="font-size: 0.9rem; color: var(--text-light);">
+        Entry: $2,680 • Target: $2,420 • SL: $2,750
+  </div>
+  </div>
+       <span style="color: var(--accent); font-weight: 600;">-2.1%</span>
+</div>
+      </div>
+         
+  <div class="signal-item">
+           <div class="d-flex justify-content-between align-items-center">
+         <div>
+   <strong style="color: var(--success);">BUY ADA/USDT</strong>
+   <div style="font-size: 0.9rem; color: var(--text-light);">
+    Entry: $0.485 • Target: $0.547 • SL: $0.461
+           </div>
+              </div>
+              <span style="color: var(--success); font-weight: 600;">+12.7%</span>
+        </div>
+         </div>
+        </div>
+          </div>
+  </div>
+  </div>
+</section>
+
+<!-- Core Features -->
+<section class="section-padding">
+    <div class="container">
+   <h2 class="section-title">Platform Features</h2>
+        <p class="section-subtitle">
+            Enterprise-grade trading technology designed for professional traders and institutions
+        </p>
+        
+     <div class="row g-4">
+    <div class="col-lg-4 col-md-6">
+           <div class="feature-card">
+      <div class="feature-icon">
+  <i class="fas fa-brain"></i>
+          </div>
+        <h4 class="mb-3">AI-Powered Analysis</h4>
+          <p style="color: var(--text-light);">
+     Advanced machine learning algorithms analyze 1000+ market indicators across 
+    multiple timeframes to identify high-probability trading opportunities.
+   </p>
+   <ul style="color: var(--text-light); list-style: none; padding: 0;">
+          <li class="mb-2"><i class="fas fa-check me-2" style="color: var(--success);"></i>Real-time sentiment analysis</li>
+    <li class="mb-2"><i class="fas fa-check me-2" style="color: var(--success);"></i>Multi-timeframe confirmation</li>
+         <li class="mb-2"><i class="fas fa-check me-2" style="color: var(--success);"></i>Technical pattern recognition</li>
+  </ul>
+            </div>
+          </div>
+            
+ <div class="col-lg-4 col-md-6">
+      <div class="feature-card">
+        <div class="feature-icon">
+   <i class="fas fa-bolt"></i>
+           </div>
+       <h4 class="mb-3">Real-Time Alerts</h4>
+       <p style="color: var(--text-light);">
+  Instant signal delivery through multiple channels ensuring you never miss 
+       profitable trading opportunities.
+           </p>
+     <ul style="color: var(--text-light); list-style: none; padding: 0;">
+       <li class="mb-2"><i class="fas fa-check me-2" style="color: var(--success);"></i>Telegram instant notifications</li>
+     <li class="mb-2"><i class="fas fa-check me-2" style="color: var(--success);"></i>Email alerts with analysis</li>
+ <li class="mb-2"><i class="fas fa-check me-2" style="color: var(--success);"></i>Mobile app push notifications</li>
+  </ul>
+          </div>
+     </div>
+ 
+            <div class="col-lg-4 col-md-6">
+    <div class="feature-card">
+         <div class="feature-icon">
+                 <i class="fas fa-shield-alt"></i>
+          </div>
+     <h4 class="mb-3">Risk Management</h4>
+  <p style="color: var(--text-light);">
+     Comprehensive risk management tools with dynamic position sizing and 
+  portfolio protection strategies.
+              </p>
+      <ul style="color: var(--text-light); list-style: none; padding: 0;">
+          <li class="mb-2"><i class="fas fa-check me-2" style="color: var(--success);"></i>Automated stop-loss placement</li>
+      <li class="mb-2"><i class="fas fa-check me-2" style="color: var(--success);"></i>Position sizing calculator</li>
+                 <li class="mb-2"><i class="fas fa-check me-2" style="color: var(--success);"></i>Portfolio risk monitoring</li>
+     </ul>
+         </div>
+            </div>
+            
+       <div class="col-lg-4 col-md-6">
+      <div class="feature-card">
+            <div class="feature-icon">
+    <i class="fas fa-chart-line"></i>
+ </div>
+     <h4 class="mb-3">Performance Analytics</h4>
+<p style="color: var(--text-light);">
+  Detailed performance tracking with transparent reporting and comprehensive 
+  trade analytics for continuous improvement.
+            </p>
+   <ul style="color: var(--text-light); list-style: none; padding: 0;">
+  <li class="mb-2"><i class="fas fa-check me-2" style="color: var(--success);"></i>Real-time P&L tracking</li>
+          <li class="mb-2"><i class="fas fa-check me-2" style="color: var(--success);"></i>Win rate analytics</li>
+            <li class="mb-2"><i class="fas fa-check me-2" style="color: var(--success);"></i>Risk-adjusted returns</li>
+       </ul>
+  </div>
+            </div>
+         
+ <div class="col-lg-4 col-md-6">
+    <div class="feature-card">
+        <div class="feature-icon">
+       <i class="fas fa-code"></i>
+       </div>
+     <h4 class="mb-3">API Integration</h4>
+           <p style="color: var(--text-light);">
+          RESTful API and WebSocket connections for seamless integration with 
+          trading platforms and custom applications.
+         </p>
+          <ul style="color: var(--text-light); list-style: none; padding: 0;">
+ <li class="mb-2"><i class="fas fa-check me-2" style="color: var(--success);"></i>REST API endpoints</li>
+            <li class="mb-2"><i class="fas fa-check me-2" style="color: var(--success);"></i>WebSocket real-time feeds</li>
+             <li class="mb-2"><i class="fas fa-check me-2" style="color: var(--success);"></i>Exchange connectivity</li>
+</ul>
+                </div>
+      </div>
+         
+            <div class="col-lg-4 col-md-6">
+         <div class="feature-card">
+        <div class="feature-icon">
+         <i class="fas fa-users"></i>
+        </div>
+     <h4 class="mb-3">Community & Support</h4>
+            <p style="color: var(--text-light);">
+    Access to exclusive trading community with expert guidance and 24/7 
+            customer support for all subscribers.
+           </p>
+    <ul style="color: var(--text-light); list-style: none; padding: 0;">
+    <li class="mb-2"><i class="fas fa-check me-2" style="color: var(--success);"></i>Private Discord community</li>
+<li class="mb-2"><i class="fas fa-check me-2" style="color: var(--success);"></i>Weekly strategy sessions</li>
+                  <li class="mb-2"><i class="fas fa-check me-2" style="color: var(--success);"></i>24/7 priority support</li>
+      </ul>
+           </div>
+ </div>
+  </div>
+    </div>
+</section>
+
+<!-- Technology Stack -->
+<section class="section-padding" style="background: rgba(26, 27, 35, 0.3);">
+    <div class="container">
+        <h2 class="section-title">Built on Enterprise Technology</h2>
+        <p class="section-subtitle">
+       Our platform leverages cutting-edge technology stack for reliability, scalability, and performance
+        </p>
+        
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+        <div class="tech-item">
+         <div class="tech-logo" style="color: var(--primary);">
+        <i class="fab fa-python"></i>
+   </div>
+     <h5>Python & ML</h5>
+         <p style="color: var(--text-light); margin: 0;">TensorFlow, scikit-learn, pandas for advanced analytics</p>
+         </div>
+    </div>
+         
+         <div class="col-lg-3 col-md-6">
+    <div class="tech-item">
+       <div class="tech-logo" style="color: var(--success);">
+         <i class="fas fa-database"></i>
+     </div>
+          <h5>High-Performance DB</h5>
+   <p style="color: var(--text-light); margin: 0;">PostgreSQL with Redis for real-time data processing</p>
+     </div>
+            </div>
+    
+         <div class="col-lg-3 col-md-6">
+        <div class="tech-item">
+      <div class="tech-logo" style="color: var(--warning);">
+              <i class="fas fa-cloud"></i>
+    </div>
+               <h5>Cloud Infrastructure</h5>
+   <p style="color: var(--text-light); margin: 0;">AWS with 99.9% uptime and global CDN</p>
+       </div>
+         </div>
+         
+      <div class="col-lg-3 col-md-6">
+     <div class="tech-item">
+   <div class="tech-logo" style="color: var(--accent);">
+                 <i class="fas fa-lock"></i>
+      </div>
+      <h5>Enterprise Security</h5>
+          <p style="color: var(--text-light); margin: 0;">256-bit encryption, SOC 2 compliance</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product Demo -->
+<section id="demo" class="section-padding">
+    <div class="container">
+        <h2 class="section-title">See TradePilot in Action</h2>
+        <p class="section-subtitle">
+     Experience our platform through an interactive demo showcasing real trading scenarios
+        </p>
+        
+    <div class="product-demo">
+      <div class="row">
+          <div class="col-lg-6">
+       <div class="demo-screen">
+ <div style="color: var(--primary); margin-bottom: 1rem;">
+      <i class="fas fa-terminal me-2"></i>TradePilot Dashboard v2.1
+ </div>
+      <div style="color: var(--success); margin-bottom: 0.5rem;">
+         > Scanning 247 cryptocurrency pairs...
+      </div>
+       <div style="color: var(--text-light); margin-bottom: 0.5rem;">
+   > Processing technical indicators...
+             </div>
+            <div style="color: var(--warning); margin-bottom: 0.5rem;">
+    > Signal detected: BTC/USDT breakout pattern
+         </div>
+            <div style="color: var(--success); margin-bottom: 1rem;">
+       > SIGNAL GENERATED: BUY BTC/USDT @ $43,250
+         </div>
+           <div style="color: var(--text-light); font-size: 0.9rem;">
+     Entry: $43,250 | Target: $51,200 | Stop Loss: $40,800<br>
+            Risk/Reward: 3.2:1 | Confidence: 87%
+        </div>
+</div>
+             </div>
+        
+<div class="col-lg-6 mt-4 mt-lg-0">
+            <h4 style="color: var(--primary); margin-bottom: 1.5rem;">Key Features Demo</h4>
+          <div class="mb-3">
+     <strong>Real-Time Signal Generation</strong>
+       <p style="color: var(--text-light); margin: 0;">Watch as our AI analyzes market conditions and generates precise trading signals with clear entry and exit points.</p>
+       </div>
+         <div class="mb-3">
+        <strong>Risk Management Integration</strong>
+              <p style="color: var(--text-light); margin: 0;">Automated risk calculations ensure optimal position sizing and portfolio protection.</p>
+            </div>
+  <div class="mb-4">
+           <strong>Multi-Channel Alerts</strong>
+  <p style="color: var(--text-light); margin: 0;">Signals are instantly delivered via Telegram, email, and dashboard notifications.</p>
+    </div>
+      <a href="contact-us.html" class="btn btn-primary-gradient">
+ <i class="fas fa-calendar me-2"></i>
+       Schedule Demo
+         </a>
+    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section-padding" style="background: linear-gradient(135deg, rgba(11, 15, 23, 0.95) 0%, rgba(26, 29, 58, 0.95) 100%), url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1920&h=600&fit=crop&auto=format'); background-size: cover; background-position: center;">
+    <div class="container text-center">
+     <h2 class="display-4 fw-bold mb-3">Ready to Transform Your Trading?</h2>
+        <p class="lead mb-5" style="color: var(--text-light); max-width: 600px; margin: 0 auto;">
+       Join thousands of professional traders who rely on TradePilot for consistent profits and superior risk management.
+        </p>
+        
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+          <a href="pricing-new.html" class="btn btn-primary-gradient btn-lg">
+           <i class="fas fa-rocket me-2"></i>
+ Start Free Trial
+         </a>
+            <a href="contact-us.html" class="btn btn-outline-primary btn-lg">
+        <i class="fas fa-phone me-2"></i>
+            Contact Sales
+            </a>
+        </div>
+  
+        <div class="mt-4">
+    <small style="color: var(--text-light);">
+    <i class="fas fa-shield-alt me-2"></i>
+      No credit card required • 7-day free trial • Cancel anytime
+          </small>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5" style="background: var(--bg-card); border-top: 1px solid var(--border-light);">
+    <div class="container">
+ <div class="row">
+  <div class="col-lg-4 mb-4">
+  <div class="d-flex align-items-center mb-3">
+         <i class="fab fa-bitcoin me-2" style="color: var(--primary); font-size: 1.5rem;"></i>
+           <h4 style="color: var(--primary); margin: 0;">TradePilot</h4>
+       </div>
+          <p style="color: var(--text-light);">
+   Professional crypto trading signals powered by AI. 
+             Built by Trailblazers Labs for the next generation of traders.
+          </p>
+              <small style="color: var(--text-light);">
+         &copy; 2024 Trailblazers Labs. All rights reserved.
+    </small>
+    </div>
+       
+            <div class="col-lg-2 col-md-6 mb-4">
+     <h5 class="mb-3">Product</h5>
+    <ul class="list-unstyled">
+       <li class="mb-2"><a href="product.html" style="color: var(--text-light); text-decoration: none;">Features</a></li>
+       <li class="mb-2"><a href="live-signals.html" style="color: var(--text-light); text-decoration: none;">Live Signals</a></li>
+       <li class="mb-2"><a href="performance-new.html" style="color: var(--text-light); text-decoration: none;">Performance</a></li>
+           <li class="mb-2"><a href="api-access.html" style="color: var(--text-light); text-decoration: none;">API Access</a></li>
+      </ul>
+        </div>
+  
+            <div class="col-lg-2 col-md-6 mb-4">
+    <h5 class="mb-3">Company</h5>
+           <ul class="list-unstyled">
+            <li class="mb-2"><a href="about-us.html" style="color: var(--text-light); text-decoration: none;">About Us</a></li>
+      <li class="mb-2"><a href="careers.html" style="color: var(--text-light); text-decoration: none;">Careers</a></li>
+            <li class="mb-2"><a href="press.html" style="color: var(--text-light); text-decoration: none;">Press</a></li>
+               <li class="mb-2"><a href="partners.html" style="color: var(--text-light); text-decoration: none;">Partners</a></li>
+ </ul>
+       </div>
+   
+      <div class="col-lg-2 col-md-6 mb-4">
+      <h5 class="mb-3">Support</h5>
+     <ul class="list-unstyled">
+               <li class="mb-2"><a href="help-center.html" style="color: var(--text-light); text-decoration: none;">Help Center</a></li>
+      <li class="mb-2"><a href="contact-us.html" style="color: var(--text-light); text-decoration: none;">Contact Us</a></li>
+ <li class="mb-2"><a href="status-page.html" style="color: var(--text-light); text-decoration: none;">Status Page</a></li>
+        <li class="mb-2"><a href="bug-bounty.html" style="color: var(--text-light); text-decoration: none;">Bug Bounty</a></li>
+      </ul>
+          </div>
+            
+   <div class="col-lg-2 col-md-6 mb-4">
+  <h5 class="mb-3">Legal</h5>
+       <ul class="list-unstyled">
+  <li class="mb-2"><a href="terms-of-service.html" style="color: var(--text-light); text-decoration: none;">Terms of Service</a></li>
+ <li class="mb-2"><a href="privacy-policy.html" style="color: var(--text-light); text-decoration: none;">Privacy Policy</a></li>
+   <li class="mb-2"><a href="risk-disclaimer.html" style="color: var(--text-light); text-decoration: none;">Risk Disclaimer</a></li>
+             <li class="mb-2"><a href="compliance.html" style="color: var(--text-light); text-decoration: none;">Compliance</a></li>
+          </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+       e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+       if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+            }
+    });
+    });
+
+    // Navbar background on scroll
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar-custom');
+     if (window.scrollY > 100) {
+   navbar.style.background = 'rgba(11, 15, 23, 0.98)';
+        } else {
+            navbar.style.background = 'rgba(11, 15, 23, 0.95)';
+      }
+    });
+</script>
+
+</body>
+</html>

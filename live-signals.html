@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Live Crypto Trading Signals - Real-Time Alerts | TradePilot by Trailblazers Labs</title>
+    <meta name="description" content="Get real-time crypto trading signals with 89% win rate. Live Bitcoin, Ethereum, and altcoin alerts with precise entry, stop-loss, and take-profit levels.">
+    <meta name="keywords" content="live crypto signals, real-time trading alerts, bitcoin signals, ethereum trading, cryptocurrency signals, trading notifications">
+    <meta name="author" content="Trailblazers Labs">
+  
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Live Crypto Trading Signals - Real-Time Professional Alerts">
+    <meta property="og:description" content="Professional crypto trading signals with 89% win rate. Real-time alerts for Bitcoin, Ethereum, and top altcoins.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1200&h=630&fit=crop&auto=format">
+    <meta property="og:type" content="website">
+    
+ <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+     --primary: #00D4FF;
+  --secondary: #1A1B23;
+    --accent: #FF6B6B;
+  --success: #00F5A0;
+       --warning: #FFB800;
+            --text-light: #B8BCC8;
+            --bg-dark: #0B0F17;
+        --bg-card: #1A1B23;
+      --border-light: rgba(255, 255, 255, 0.1);
+        }
+
+    body {
+  background: var(--bg-dark);
+    color: white;
+ font-family: 'Inter', sans-serif;
+        line-height: 1.6;
+        }
+
+        /* Navigation */
+        .navbar-custom {
+            background: rgba(11, 15, 23, 0.95);
+          backdrop-filter: blur(20px);
+border-bottom: 1px solid var(--border-light);
+         padding: 1rem 0;
+  }
+
+        .navbar-brand {
+    font-weight: 800;
+            font-size: 1.8rem;
+            color: var(--primary) !important;
+            text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+     }
+
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+    transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+     color: var(--primary) !important;
+        }
+
+        /* Hero Section */
+        .signals-hero {
+       background: linear-gradient(135deg, rgba(11, 15, 23, 0.95) 0%, rgba(26, 29, 58, 0.95) 100%),
+     url('https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1920&h=800&fit=crop&auto=format');
+            background-size: cover;
+  background-position: center;
+        padding: 8rem 0 6rem;
+            margin-top: 76px;
+        }
+
+ .hero-title {
+            font-size: 3.5rem;
+   font-weight: 800;
+            background: linear-gradient(135deg, #ffffff 0%, var(--primary) 100%);
+            -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+            line-height: 1.1;
+    }
+
+        /* Live Status */
+        .live-status {
+  display: inline-flex;
+   align-items: center;
+         background: rgba(0, 245, 160, 0.2);
+            border: 1px solid var(--success);
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+font-weight: 700;
+            color: var(--success);
+         margin-bottom: 2rem;
+   animation: pulse-glow 2s infinite;
+    }
+
+        .live-dot {
+  width: 12px;
+     height: 12px;
+            background: var(--success);
+        border-radius: 50%;
+ margin-right: 0.75rem;
+    animation: blink 1.5s ease-in-out infinite;
+        }
+
+        @keyframes blink {
+        0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+   @keyframes pulse-glow {
+     0%, 100% { box-shadow: 0 0 5px rgba(0, 245, 160, 0.5); }
+            50% { box-shadow: 0 0 20px rgba(0, 245, 160, 0.8); }
+        }
+
+     /* Signal Feed */
+        .signal-feed {
+       background: var(--bg-card);
+        border-radius: 20px;
+padding: 2rem;
+     border: 1px solid var(--border-light);
+         height: 600px;
+            overflow-y: auto;
+        }
+
+        .signal-item {
+            background: rgba(255, 255, 255, 0.02);
+          border-radius: 12px;
+          padding: 1.5rem;
+    margin-bottom: 1rem;
+            border-left: 4px solid var(--success);
+    transition: all 0.3s ease;
+     position: relative;
+        }
+
+        .signal-item.sell {
+            border-left-color: var(--accent);
+        }
+
+    .signal-item:hover {
+            transform: translateX(5px);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .signal-header {
+  display: flex;
+        justify-content: space-between;
+   align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .signal-type {
+       background: var(--success);
+      color: var(--bg-dark);
+            padding: 0.3rem 1rem;
+   border-radius: 20px;
+         font-weight: 700;
+        font-size: 0.8rem;
+          text-transform: uppercase;
+        }
+
+        .signal-type.sell {
+            background: var(--accent);
+    }
+
+        .signal-profit {
+        font-weight: 700;
+    color: var(--success);
+ font-size: 1.2rem;
+        }
+
+  .signal-profit.loss {
+          color: var(--accent);
+        }
+
+        .signal-details {
+  display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+          margin-top: 1rem;
+        }
+
+        .signal-detail {
+      text-align: center;
+     padding: 0.5rem;
+         background: rgba(255, 255, 255, 0.03);
+     border-radius: 8px;
+   }
+
+        /* Filter Tabs */
+        .filter-tabs {
+   display: flex;
+  gap: 1rem;
+            margin-bottom: 2rem;
+  flex-wrap: wrap;
+ justify-content: center;
+      }
+
+    .filter-tab {
+      background: transparent;
+        border: 2px solid var(--border-light);
+      color: var(--text-light);
+  padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+      font-weight: 600;
+}
+
+        .filter-tab.active,
+      .filter-tab:hover {
+            border-color: var(--primary);
+    background: rgba(0, 212, 255, 0.1);
+            color: var(--primary);
+        }
+
+   /* Stats Cards */
+        .stat-card {
+        background: var(--bg-card);
+            border-radius: 16px;
+   padding: 2rem;
+            text-align: center;
+        border: 1px solid var(--border-light);
+            transition: all 0.3s ease;
+      }
+
+        .stat-card:hover {
+   transform: translateY(-5px);
+            border-color: var(--primary);
+      }
+
+        .stat-value {
+            font-size: 2.5rem;
+    font-weight: 800;
+ color: var(--primary);
+   line-height: 1;
+  margin-bottom: 0.5rem;
+      }
+
+        .stat-label {
+            color: var(--text-light);
+    font-weight: 500;
+            text-transform: uppercase;
+   letter-spacing: 0.5px;
+ }
+
+        /* Subscription Cards */
+     .subscription-card {
+  background: var(--bg-card);
+       border-radius: 16px;
+            padding: 2rem;
+     border: 1px solid var(--border-light);
+            text-align: center;
+        height: 100%;
+        }
+
+        .subscription-icon {
+            font-size: 3rem;
+    color: var(--primary);
+          margin-bottom: 1rem;
+  }
+
+        /* Buttons */
+        .btn-primary-gradient {
+          background: linear-gradient(135deg, var(--primary) 0%, #0099CC 100%);
+            border: none;
+       padding: 1rem 2rem;
+        font-weight: 700;
+       border-radius: 50px;
+        color: white;
+   text-decoration: none;
+   transition: all 0.3s ease;
+ box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
+            display: inline-block;
+        }
+
+        .btn-primary-gradient:hover {
+            transform: translateY(-3px);
+ box-shadow: 0 12px 35px rgba(0, 212, 255, 0.4);
+            color: white;
+      text-decoration: none;
+}
+
+  .btn-outline-primary {
+            border: 2px solid var(--primary);
+      color: var(--primary);
+            background: transparent;
+            padding: 1rem 2rem;
+          border-radius: 50px;
+     font-weight: 700;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+     }
+
+   .btn-outline-primary:hover {
+            background: var(--primary);
+            color: var(--bg-dark);
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+
+        /* Section Styles */
+        .section-padding {
+            padding: 5rem 0;
+ }
+
+        .section-title {
+   font-size: 2.5rem;
+    font-weight: 700;
+            text-align: center;
+      margin-bottom: 1rem;
+            color: white;
+   }
+
+        .section-subtitle {
+     text-align: center;
+            color: var(--text-light);
+            font-size: 1.1rem;
+        margin-bottom: 3rem;
+       max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+      .hero-title {
+         font-size: 2.5rem;
+      }
+.signals-hero {
+     padding: 4rem 0 2rem;
+       }
+  .signal-feed {
+          height: 400px;
+            }
+.signal-details {
+             grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="trading-signals-new.html">
+   <i class="fab fa-bitcoin me-2"></i>
+TradePilot
+   </a>
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+     <span class="navbar-toggler-icon"></span>
+        </button>
+        
+  <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+     <li class="nav-item">
+ <a class="nav-link" href="product.html">Product</a>
+              </li>
+    <li class="nav-item">
+    <a class="nav-link active" href="live-signals.html">Live Signals</a>
+         </li>
+                <li class="nav-item">
+         <a class="nav-link" href="performance-new.html">Performance</a>
+       </li>
+     <li class="nav-item">
+    <a class="nav-link" href="pricing-new.html">Pricing</a>
+      </li>
+       <li class="nav-item">
+          <a class="nav-link" href="api-access.html">API</a>
+        </li>
+            </ul>
+            
+     <div class="d-flex align-items-center gap-3">
+        <a href="pricing-new.html" class="btn btn-outline-primary">Join Beta</a>
+       <a href="pricing-new.html" class="btn btn-primary-gradient">Start Free Trial</a>
+       </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="signals-hero">
+    <div class="container text-center">
+        <div class="live-status">
+   <div class="live-dot"></div>
+            LIVE SIGNALS ACTIVE • 24/7 MONITORING
+        </div>
+        
+        <h1 class="hero-title">Real-Time Crypto Trading Signals</h1>
+     <p class="lead" style="color: var(--text-light); max-width: 700px; margin: 0 auto 3rem;">
+          Professional-grade cryptocurrency trading alerts delivered instantly to your device. 
+            89% win rate with transparent performance tracking and comprehensive risk management.
+        </p>
+        
+        <div class="row g-4 mb-5">
+            <div class="col-lg-3 col-md-6">
+<div class="stat-card">
+            <div class="stat-value">89.2%</div>
+ <div class="stat-label">Win Rate</div>
+      </div>
+       </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-card">
+   <div class="stat-value">1,847</div>
+           <div class="stat-label">Signals Sent</div>
+         </div>
+            </div>
+   <div class="col-lg-3 col-md-6">
+        <div class="stat-card">
+  <div class="stat-value">$2.4M+</div>
+      <div class="stat-label">Profits Generated</div>
+          </div>
+  </div>
+            <div class="col-lg-3 col-md-6">
+      <div class="stat-card">
+            <div class="stat-value">25K+</div>
+   <div class="stat-label">Active Members</div>
+       </div>
+          </div>
+        </div>
+ </div>
+</section>
+
+<!-- Live Signal Feed -->
+<section class="section-padding">
+    <div class="container">
+        <h2 class="section-title">Live Signal Feed</h2>
+    <p class="section-subtitle">
+   Real-time trading signals with precise entry, stop-loss, and take-profit levels
+        </p>
+        
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+            <button class="filter-tab active" onclick="filterSignals('all')">All Signals</button>
+          <button class="filter-tab" onclick="filterSignals('buy')">Buy Signals</button>
+            <button class="filter-tab" onclick="filterSignals('sell')">Sell Signals</button>
+    <button class="filter-tab" onclick="filterSignals('active')">Active</button>
+            <button class="filter-tab" onclick="filterSignals('closed')">Closed</button>
+        </div>
+        
+  <div class="row">
+<div class="col-lg-8">
+          <div class="signal-feed" id="signalFeed">
+       <!-- Signal items will be dynamically loaded here -->
+     <div class="signal-item">
+    <div class="signal-header">
+      <span class="signal-type">BUY</span>
+      <span class="signal-profit">+18.4%</span>
+     </div>
+                <div class="d-flex justify-content-between align-items-center">
+     <div>
+     <h5 class="mb-1">BTC/USDT</h5>
+         <small style="color: var(--text-light);">Bitcoin Long Position</small>
+      </div>
+      <div class="text-end">
+      <small style="color: var(--text-light);">2 minutes ago</small>
+       </div>
+             </div>
+     <div class="signal-details">
+          <div class="signal-detail">
+    <small style="color: var(--text-light);">Entry</small>
+         <div style="font-weight: 600;">$43,250</div>
+         </div>
+    <div class="signal-detail">
+        <small style="color: var(--text-light);">Target</small>
+          <div style="font-weight: 600; color: var(--success);">$51,200</div>
+     </div>
+   <div class="signal-detail">
+         <small style="color: var(--text-light);">Stop Loss</small>
+           <div style="font-weight: 600; color: var(--accent);">$40,800</div>
+           </div>
+     <div class="signal-detail">
+               <small style="color: var(--text-light);">R:R</small>
+      <div style="font-weight: 600;">3.2:1</div>
+               </div>
+      </div>
+       </div>
+    
+   <div class="signal-item sell">
+           <div class="signal-header">
+                <span class="signal-type sell">SELL</span>
+         <span class="signal-profit loss">-2.1%</span>
+ </div>
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+  <h5 class="mb-1">ETH/USDT</h5>
+        <small style="color: var(--text-light);">Ethereum Short Position</small>
+            </div>
+                <div class="text-end">
+   <small style="color: var(--text-light);">8 minutes ago</small>
+        </div>
+     </div>
+     <div class="signal-details">
+  <div class="signal-detail">
+      <small style="color: var(--text-light);">Entry</small>
+           <div style="font-weight: 600;">$2,680</div>
+   </div>
+  <div class="signal-detail">
+          <small style="color: var(--text-light);">Target</small>
+  <div style="font-weight: 600; color: var(--success);">$2,420</div>
+           </div>
+      <div class="signal-detail">
+        <small style="color: var(--text-light);">Stop Loss</small>
+           <div style="font-weight: 600; color: var(--accent);">$2,750</div>
+       </div>
+                 <div class="signal-detail">
+        <small style="color: var(--text-light);">R:R</small>
+                 <div style="font-weight: 600;">3.7:1</div>
+       </div>
+              </div>
+      </div>
+     
+      <div class="signal-item">
+    <div class="signal-header">
+       <span class="signal-type">BUY</span>
+          <span class="signal-profit">+12.7%</span>
+       </div>
+            <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <h5 class="mb-1">ADA/USDT</h5>
+              <small style="color: var(--text-light);">Cardano Breakout</small>
+               </div>
+    <div class="text-end">
+              <small style="color: var(--text-light);">15 minutes ago</small>
+      </div>
+  </div>
+   <div class="signal-details">
+         <div class="signal-detail">
+       <small style="color: var(--text-light);">Entry</small>
+           <div style="font-weight: 600;">$0.485</div>
+       </div>
+               <div class="signal-detail">
+    <small style="color: var(--text-light);">Target</small>
+      <div style="font-weight: 600; color: var(--success);">$0.547</div>
+</div>
+  <div class="signal-detail">
+                   <small style="color: var(--text-light);">Stop Loss</small>
+    <div style="font-weight: 600; color: var(--accent);">$0.461</div>
+          </div>
+              <div class="signal-detail">
+        <small style="color: var(--text-light);">R:R</small>
+       <div style="font-weight: 600;">2.6:1</div>
+           </div>
+         </div>
+     </div>
+   
+   <div class="signal-item">
+               <div class="signal-header">
+     <span class="signal-type">BUY</span>
+    <span class="signal-profit">+26.2%</span>
+   </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+       <h5 class="mb-1">SOL/USDT</h5>
+      <small style="color: var(--text-light);">Solana Momentum</small>
+        </div>
+         <div class="text-end">
+        <small style="color: var(--text-light);">1 hour ago</small>
+       </div>
+          </div>
+     <div class="signal-details">
+      <div class="signal-detail">
+   <small style="color: var(--text-light);">Entry</small>
+        <div style="font-weight: 600;">$98.50</div>
+               </div>
+       <div class="signal-detail">
+             <small style="color: var(--text-light);">Target</small>
+        <div style="font-weight: 600; color: var(--success);">$124.30</div>
+  </div>
+       <div class="signal-detail">
+          <small style="color: var(--text-light);">Stop Loss</small>
+  <div style="font-weight: 600; color: var(--accent);">$89.20</div>
+          </div>
+ <div class="signal-detail">
+       <small style="color: var(--text-light);">R:R</small>
+     <div style="font-weight: 600;">2.8:1</div>
+  </div>
+      </div>
+       </div>
+    </div>
+            </div>
+  
+            <div class="col-lg-4 mt-4 mt-lg-0">
+  <div class="subscription-card mb-4">
+    <div class="subscription-icon">
+           <i class="fab fa-telegram"></i>
+              </div>
+          <h4 class="mb-3">Telegram Alerts</h4>
+         <p style="color: var(--text-light);">
+               Get instant signal notifications directly to your Telegram. 
+    Join 25,000+ traders in our premium channels.
+        </p>
+              <a href="#" class="btn btn-primary-gradient w-100 mb-2">
+                <i class="fab fa-telegram me-2"></i>
+ Join Premium Channel
+     </a>
+   <a href="#" class="btn btn-outline-primary w-100">
+  <i class="fas fa-gift me-2"></i>
+ Free Channel
+      </a>
+      </div>
+                
+        <div class="subscription-card">
+   <div class="subscription-icon">
+   <i class="fas fa-envelope"></i>
+          </div>
+   <h4 class="mb-3">Email Notifications</h4>
+ <p style="color: var(--text-light);">
+            Receive detailed signal analysis and market insights 
+      directly to your inbox with comprehensive reports.
+      </p>
+     <div class="d-flex gap-3 mb-3">
+  <i class="fas fa-check-circle" style="color: var(--success); margin-top: 0.25rem;"></i>
+    <span>Detailed trade analysis</span>
+    </div>
+          <div class="d-flex gap-3 mb-3">
+                 <i class="fas fa-check-circle" style="color: var(--success); margin-top: 0.25rem;"></i>
+         <span>Market context and reasoning</span>
+         </div>
+            <div class="d-flex gap-3 mb-4">
+   <i class="fas fa-check-circle" style="color: var(--success); margin-top: 0.25rem;"></i>
+      <span>Risk management guidance</span>
+          </div>
+          <a href="pricing-new.html" class="btn btn-outline-primary w-100">
+            <i class="fas fa-user-plus me-2"></i>
+  Subscribe Now
+        </a>
+    </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section class="section-padding" style="background: rgba(26, 27, 35, 0.3);">
+    <div class="container">
+    <h2 class="section-title">How Our Signals Work</h2>
+    <p class="section-subtitle">
+            From market analysis to signal delivery - understand our proven process
+        </p>
+        
+     <div class="row g-4">
+    <div class="col-lg-3 col-md-6">
+          <div class="text-center">
+          <div class="mx-auto mb-3 d-flex align-items-center justify-content-center" 
+        style="width: 80px; height: 80px; background: var(--primary); border-radius: 50%; font-weight: 700; font-size: 1.5rem;">1</div>
+         <h4 class="mb-3">Market Analysis</h4>
+             <p style="color: var(--text-light);">
+          Our AI scans 1000+ indicators across multiple timeframes 
+     to identify trading opportunities.
+             </p>
+     </div>
+ </div>
+          
+  <div class="col-lg-3 col-md-6">
+    <div class="text-center">
+         <div class="mx-auto mb-3 d-flex align-items-center justify-content-center" 
+                  style="width: 80px; height: 80px; background: var(--primary); border-radius: 50%; font-weight: 700; font-size: 1.5rem;">2</div>
+      <h4 class="mb-3">Signal Generation</h4>
+  <p style="color: var(--text-light);">
+       When conditions align, precise signals are generated 
+  with entry, stop-loss, and take-profit levels.
+        </p>
+     </div>
+    </div>
+   
+       <div class="col-lg-3 col-md-6">
+         <div class="text-center">
+  <div class="mx-auto mb-3 d-flex align-items-center justify-content-center" 
+           style="width: 80px; height: 80px; background: var(--primary); border-radius: 50%; font-weight: 700; font-size: 1.5rem;">3</div>
+ <h4 class="mb-3">Instant Delivery</h4>
+          <p style="color: var(--text-light);">
+               Signals are instantly sent via Telegram, email, 
+          and mobile notifications to all subscribers.
+  </p>
+         </div>
+       </div>
+            
+     <div class="col-lg-3 col-md-6">
+    <div class="text-center">
+           <div class="mx-auto mb-3 d-flex align-items-center justify-content-center" 
+           style="width: 80px; height: 80px; background: var(--primary); border-radius: 50%; font-weight: 700; font-size: 1.5rem;">4</div>
+  <h4 class="mb-3">Performance Tracking</h4>
+               <p style="color: var(--text-light);">
+     Every signal is tracked transparently with 
+          real-time performance updates and results.
+            </p>
+    </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section-padding" style="background: linear-gradient(135deg, rgba(11, 15, 23, 0.95) 0%, rgba(26, 29, 58, 0.95) 100%), url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1920&h=600&fit=crop&auto=format'); background-size: cover; background-position: center;">
+    <div class="container text-center">
+        <h2 class="display-4 fw-bold mb-3">Start Receiving Professional Signals</h2>
+        <p class="lead mb-5" style="color: var(--text-light); max-width: 600px; margin: 0 auto;">
+   Join 25,000+ traders who rely on TradePilot for consistent profits and professional-grade market analysis.
+        </p>
+  
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+        <a href="pricing-new.html" class="btn btn-primary-gradient btn-lg">
+   <i class="fas fa-rocket me-2"></i>
+        Start Free Trial
+       </a>
+    <a href="#" class="btn btn-outline-primary btn-lg">
+ <i class="fab fa-telegram me-2"></i>
+         Join Free Telegram
+            </a>
+        </div>
+      
+        <div class="mt-4">
+  <small style="color: var(--text-light);">
+   <i class="fas fa-shield-alt me-2"></i>
+        No credit card required • 7-day free trial • Cancel anytime
+      </small>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5" style="background: var(--bg-card); border-top: 1px solid var(--border-light);">
+    <div class="container">
+        <div class="row">
+  <div class="col-lg-4 mb-4">
+      <div class="d-flex align-items-center mb-3">
+        <i class="fab fa-bitcoin me-2" style="color: var(--primary); font-size: 1.5rem;"></i>
+              <h4 style="color: var(--primary); margin: 0;">TradePilot</h4>
+          </div>
+            <p style="color: var(--text-light);">
+          Professional crypto trading signals powered by AI. 
+        Built by Trailblazers Labs for the next generation of traders.
+          </p>
+     <small style="color: var(--text-light);">
+            &copy; 2024 Trailblazers Labs. All rights reserved.
+          </small>
+            </div>
+     
+ <div class="col-lg-2 col-md-6 mb-4">
+          <h5 class="mb-3">Product</h5>
+    <ul class="list-unstyled">
+         <li class="mb-2"><a href="product.html" style="color: var(--text-light); text-decoration: none;">Features</a></li>
+    <li class="mb-2"><a href="live-signals.html" style="color: var(--text-light); text-decoration: none;">Live Signals</a></li>
+                    <li class="mb-2"><a href="performance-new.html" style="color: var(--text-light); text-decoration: none;">Performance</a></li>
+             <li class="mb-2"><a href="api-access.html" style="color: var(--text-light); text-decoration: none;">API Access</a></li>
+          </ul>
+            </div>
+            
+   <div class="col-lg-2 col-md-6 mb-4">
+    <h5 class="mb-3">Company</h5>
+                <ul class="list-unstyled">
+   <li class="mb-2"><a href="about-us.html" style="color: var(--text-light); text-decoration: none;">About Us</a></li>
+ <li class="mb-2"><a href="careers.html" style="color: var(--text-light); text-decoration: none;">Careers</a></li>
+          <li class="mb-2"><a href="press.html" style="color: var(--text-light); text-decoration: none;">Press</a></li>
+    <li class="mb-2"><a href="partners.html" style="color: var(--text-light); text-decoration: none;">Partners</a></li>
+     </ul>
+ </div>
+     
+  <div class="col-lg-2 col-md-6 mb-4">
+  <h5 class="mb-3">Support</h5>
+         <ul class="list-unstyled">
+            <li class="mb-2"><a href="help-center.html" style="color: var(--text-light); text-decoration: none;">Help Center</a></li>
+     <li class="mb-2"><a href="contact-us.html" style="color: var(--text-light); text-decoration: none;">Contact Us</a></li>
+          <li class="mb-2"><a href="status-page.html" style="color: var(--text-light); text-decoration: none;">Status Page</a></li>
+    <li class="mb-2"><a href="bug-bounty.html" style="color: var(--text-light); text-decoration: none;">Bug Bounty</a></li>
+             </ul>
+      </div>
+          
+  <div class="col-lg-2 col-md-6 mb-4">
+   <h5 class="mb-3">Legal</h5>
+       <ul class="list-unstyled">
+      <li class="mb-2"><a href="terms-of-service.html" style="color: var(--text-light); text-decoration: none;">Terms of Service</a></li>
+      <li class="mb-2"><a href="privacy-policy.html" style="color: var(--text-light); text-decoration: none;">Privacy Policy</a></li>
+  <li class="mb-2"><a href="risk-disclaimer.html" style="color: var(--text-light); text-decoration: none;">Risk Disclaimer</a></li>
+   <li class="mb-2"><a href="compliance.html" style="color: var(--text-light); text-decoration: none;">Compliance</a></li>
+            </ul>
+            </div>
+</div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Filter signals functionality
+    function filterSignals(type) {
+        // Update active tab
+        document.querySelectorAll('.filter-tab').forEach(tab => tab.classList.remove('active'));
+   event.target.classList.add('active');
+        
+  // Filter logic would be implemented here
+    console.log('Filtering by:', type);
+    }
+
+    // Simulate live signal updates
+    function updateSignalFeed() {
+        // This would connect to a real WebSocket or API
+        console.log('Updating signal feed...');
+    }
+
+    // Update feed every 30 seconds
+    setInterval(updateSignalFeed, 30000);
+
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+     target.scrollIntoView({ behavior: 'smooth' });
+        }
+        });
+  });
+
+    // Navbar background on scroll
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar-custom');
+   if (window.scrollY > 100) {
+     navbar.style.background = 'rgba(11, 15, 23, 0.98)';
+        } else {
+         navbar.style.background = 'rgba(11, 15, 23, 0.95)';
+        }
+    });
+</script>
+
+</body>
+</html>

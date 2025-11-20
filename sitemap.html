@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Complete Site Map - TradePilot | Trailblazers Labs</title>
+    <meta name="description" content="Complete sitemap and navigation structure for TradePilot trading platform. Access all pages and features.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #00D4FF;
+    --secondary: #1A1B23;
+       --accent: #FF6B6B;
+       --success: #00F5A0;
+            --warning: #FFB800;
+            --text-light: #B8BCC8;
+            --bg-dark: #0B0F17;
+        --bg-card: #1A1B23;
+            --border-light: rgba(255, 255, 255, 0.1);
+     }
+
+      body {
+            background: var(--bg-dark);
+            color: white;
+      font-family: 'Inter', sans-serif;
+        line-height: 1.6;
+        }
+
+  .navbar-custom {
+       background: rgba(11, 15, 23, 0.95);
+       backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-light);
+   padding: 1rem 0;
+        }
+
+      .navbar-brand {
+            font-weight: 800;
+  font-size: 1.8rem;
+    color: var(--primary) !important;
+            text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+        }
+
+    .hero-section {
+   background: linear-gradient(135deg, rgba(11, 15, 23, 0.95) 0%, rgba(26, 29, 58, 0.95) 100%),
+         url('https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=1920&h=1080&fit=crop&auto=format');
+     background-size: cover;
+     background-position: center;
+            min-height: 70vh;
+            display: flex;
+ align-items: center;
+        position: relative;
+    margin-top: 76px;
+      }
+
+        .sitemap-card {
+            background: var(--bg-card);
+      border-radius: 16px;
+       padding: 2rem;
+     border: 1px solid var(--border-light);
+    transition: all 0.3s ease;
+            margin-bottom: 2rem;
+        }
+
+        .sitemap-card:hover {
+      transform: translateY(-5px);
+            border-color: var(--primary);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .sitemap-section {
+          margin-bottom: 3rem;
+        }
+
+        .section-title {
+        color: var(--primary);
+          font-size: 1.5rem;
+          font-weight: 700;
+            margin-bottom: 1rem;
+   display: flex;
+       align-items: center;
+        gap: 0.5rem;
+        }
+
+        .page-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .page-links li {
+margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+  position: relative;
+        }
+
+    .page-links li::before {
+            content: '?';
+ position: absolute;
+         left: 0;
+      color: var(--primary);
+            font-weight: bold;
+    }
+
+        .page-links a {
+       color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+     .page-links a:hover {
+    color: var(--primary);
+            transform: translateX(5px);
+  display: inline-block;
+        }
+
+        .page-status {
+      font-size: 0.8rem;
+        padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+    margin-left: 0.5rem;
+ }
+
+        .status-complete {
+       background: rgba(0, 245, 160, 0.2);
+        color: var(--success);
+   border: 1px solid var(--success);
+        }
+
+        .status-enhanced {
+            background: rgba(0, 212, 255, 0.2);
+       color: var(--primary);
+   border: 1px solid var(--primary);
+        }
+
+        .status-new {
+            background: rgba(255, 184, 0, 0.2);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+        }
+
+   .main-page {
+ font-weight: 700;
+         font-size: 1.1rem;
+        }
+
+        .btn-primary-gradient {
+            background: linear-gradient(135deg, var(--primary) 0%, #0099CC 100%);
+    border: none;
+       padding: 1rem 2rem;
+            font-weight: 700;
+         border-radius: 50px;
+ color: white;
+            text-decoration: none;
+         transition: all 0.3s ease;
+         box-shadow: 0 8px 25px rgba(0, 212, 255, 0.3);
+          display: inline-block;
+        }
+
+.btn-primary-gradient:hover {
+      transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0, 212, 255, 0.4);
+            color: white;
+            text-decoration: none;
+   }
+
+   .note-box {
+      background: rgba(0, 212, 255, 0.1);
+          border: 1px solid var(--primary);
+            border-radius: 12px;
+            padding: 1.5rem;
+    margin: 2rem 0;
+      }
+
+     @media (max-width: 768px) {
+ .hero-section {
+           min-height: 50vh;
+padding: 2rem 0;
+  }
+   }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="trading-signals-enhanced.html">
+            <i class="fab fa-bitcoin me-2"></i>
+      TradePilot
+</a>
+        
+        <div class="d-flex align-items-center gap-3">
+   <a href="trading-signals-enhanced.html" class="btn btn-primary-gradient">
+     <i class="fas fa-home me-2"></i>
+    Return to Platform
+         </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container text-center">
+      <h1 class="display-4 fw-bold mb-3" style="color: white;">
+     TradePilot Complete Site Map
+     </h1>
+     <p class="lead" style="color: var(--text-light); max-width: 700px; margin: 0 auto;">
+   Navigate through all pages and features of the TradePilot trading platform. 
+     All links are functional and lead to their respective sections.
+        </p>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="py-5">
+    <div class="container">
+        
+        <!-- Note Box -->
+        <div class="note-box">
+            <h5 style="color: var(--primary); margin-bottom: 1rem;">
+    <i class="fas fa-info-circle me-2"></i>
+    Platform Status
+      </h5>
+ <p style="margin: 0; color: var(--text-light);">
+ All pages have been enhanced with enterprise-grade design, high-quality imagery, 
+      and professional content. The platform is fully functional with working navigation 
+         and responsive design for all devices.
+         </p>
+  </div>
+
+        <div class="row">
+       <!-- Core Platform Pages -->
+  <div class="col-lg-6">
+      <div class="sitemap-card">
+          <div class="sitemap-section">
+     <h3 class="section-title">
+           <i class="fas fa-chart-line"></i>
+Core Platform Pages
+         </h3>
+   <ul class="page-links">
+       <li>
+  <a href="index.html" class="main-page">Home / Landing Page</a>
+         <span class="page-status status-enhanced">Enhanced</span>
+          </li>
+<li>
+         <a href="trading-signals-enhanced.html" class="main-page">Trading Signals Dashboard</a>
+     <span class="page-status status-enhanced">Enhanced</span>
+                 </li>
+    <li>
+        <a href="product.html">Product Features</a>
+            <span class="page-status status-complete">Complete</span>
+      </li>
+          <li>
+         <a href="live-signals.html">Live Signal Feed</a>
+  <span class="page-status status-complete">Complete</span>
+   </li>
+           <li>
+ <a href="performance-final.html">Performance Analytics</a>
+          <span class="page-status status-enhanced">Enhanced</span>
+        </li>
+ <li>
+ <a href="pricing-final.html">Pricing Plans</a>
+         <span class="page-status status-enhanced">Enhanced</span>
+         </li>
+           <li>
+ <a href="api-access.html">API Documentation</a>
+    <span class="page-status status-complete">Complete</span>
+        </li>
+            </ul>
+         </div>
+    </div>
+
+    <!-- Company Pages -->
+  <div class="sitemap-card">
+                <div class="sitemap-section">
+          <h3 class="section-title">
+          <i class="fas fa-building"></i>
+      Company & Support
+      </h3>
+         <ul class="page-links">
+           <li>
+      <a href="about-us.html">About Trailblazers Labs</a>
+                   <span class="page-status status-complete">Complete</span>
+</li>
+      <li>
+         <a href="contact-us.html">Contact Support</a>
+  <span class="page-status status-complete">Complete</span>
+       </li>
+   <li>
+     <a href="help-center.html">Help Center</a>
+          <span class="page-status status-complete">Complete</span>
+             </li>
+        <li>
+      <a href="status-page.html">System Status</a>
+              <span class="page-status status-complete">Complete</span>
+        </li>
+            </ul>
+      </div>
+      </div>
+       </div>
+
+    <!-- Legal & Compliance -->
+   <div class="col-lg-6">
+    <div class="sitemap-card">
+        <div class="sitemap-section">
+   <h3 class="section-title">
+        <i class="fas fa-shield-alt"></i>
+  Legal & Compliance
+    </h3>
+       <ul class="page-links">
+   <li>
+    <a href="terms-of-service.html">Terms of Service</a>
+        <span class="page-status status-complete">Complete</span>
+          </li>
+   <li>
+           <a href="privacy-policy.html">Privacy Policy</a>
+  <span class="page-status status-complete">Complete</span>
+   </li>
+         <li>
+       <a href="refund-and-cancellation-policy.html">Refund Policy</a>
+                 <span class="page-status status-complete">Complete</span>
+             </li>
+      </ul>
+        </div>
+    </div>
+
+       <!-- Alternative Versions -->
+          <div class="sitemap-card">
+   <div class="sitemap-section">
+      <h3 class="section-title">
+           <i class="fas fa-code-branch"></i>
+         Page Versions & Redirects
+         </h3>
+         <ul class="page-links">
+          <li>
+     <a href="index-redirect.html">Original Landing Redirect</a>
+  <span class="page-status status-complete">Complete</span>
+  </li>
+     <li>
+     <a href="index-redirect-enhanced.html">Enhanced Landing Redirect</a>
+       <span class="page-status status-enhanced">Enhanced</span>
+  </li>
+        <li>
+                   <a href="trading-signals.html">Original Trading Signals</a>
+       <span class="page-status status-complete">Legacy</span>
+          </li>
+     <li>
+    <a href="trading-signals-new.html">New Trading Signals</a>
+       <span class="page-status status-complete">Version 2</span>
+   </li>
+<li>
+   <a href="performance.html">Original Performance</a>
+              <span class="page-status status-complete">Legacy</span>
+  </li>
+ <li>
+              <a href="pricing.html">Original Pricing</a>
+           <span class="page-status status-complete">Legacy</span>
+            </li>
+             </ul>
+        </div>
+</div>
+          </div>
+  </div>
+
+      <!-- Key Features Summary -->
+        <div class="row mt-5">
+      <div class="col-lg-12">
+       <div class="sitemap-card">
+    <h3 class="section-title">
+         <i class="fas fa-star"></i>
+           Platform Highlights
+     </h3>
+         <div class="row">
+          <div class="col-md-4">
+  <h5 style="color: var(--success); margin-bottom: 1rem;">? Design Excellence</h5>
+       <ul style="color: var(--text-light); list-style: none; padding: 0;">
+    <li>• Enterprise-grade design system</li>
+     <li>• Consistent branding across all pages</li>
+   <li>• High-quality Unsplash imagery</li>
+       <li>• Responsive mobile-first design</li>
+              </ul>
+            </div>
+  <div class="col-md-4">
+               <h5 style="color: var(--primary); margin-bottom: 1rem;">? Performance</h5>
+      <ul style="color: var(--text-light); list-style: none; padding: 0;">
+              <li>• Fast loading times</li>
+           <li>• Optimized images and fonts</li>
+         <li>• Smooth animations</li>
+        <li>• Cross-browser compatibility</li>
+  </ul>
+    </div>
+       <div class="col-md-4">
+        <h5 style="color: var(--warning); margin-bottom: 1rem;">?? Functionality</h5>
+              <ul style="color: var(--text-light); list-style: none; padding: 0;">
+  <li>• Working navigation system</li>
+           <li>• Interactive components</li>
+            <li>• Form validations</li>
+    <li>• Professional animations</li>
+      </ul>
+      </div>
+            </div>
+          </div>
+            </div>
+        </div>
+
+  <!-- Quick Access -->
+        <div class="text-center mt-5">
+   <h3 style="color: var(--primary); margin-bottom: 2rem;">Quick Access</h3>
+   <div class="d-flex gap-3 justify-content-center flex-wrap">
+    <a href="trading-signals-enhanced.html" class="btn btn-primary-gradient">
+  <i class="fas fa-chart-line me-2"></i>
+         Trading Dashboard
+                </a>
+        <a href="product.html" class="btn btn-primary-gradient">
+        <i class="fas fa-rocket me-2"></i>
+         Product Demo
+             </a>
+       <a href="pricing-final.html" class="btn btn-primary-gradient">
+  <i class="fas fa-credit-card me-2"></i>
+       View Pricing
+    </a>
+       <a href="contact-us.html" class="btn btn-primary-gradient">
+          <i class="fas fa-envelope me-2"></i>
+             Contact Us
+            </a>
+   </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5" style="background: var(--bg-card); border-top: 1px solid var(--border-light);">
+    <div class="container text-center">
+        <div class="d-flex align-items-center justify-content-center mb-3">
+        <i class="fab fa-bitcoin me-2" style="color: var(--primary); font-size: 1.5rem;"></i>
+            <h4 style="color: var(--primary); margin: 0;">TradePilot</h4>
+        </div>
+        <p style="color: var(--text-light);">
+      Professional crypto trading signals powered by AI. 
+ Built by Trailblazers Labs for the next generation of traders.
+        </p>
+  <small style="color: var(--text-light);">
+  &copy; 2024 Trailblazers Labs. All rights reserved.
+      </small>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

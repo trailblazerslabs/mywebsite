@@ -1,0 +1,11 @@
+<!-- Add this script to redirect to TradePilot platform -->
+<script>
+// Immediate redirect to TradePilot trading signals platform
+window.location.href = 'trading-signals.html';
+</script>
+
+<!-- Alternative: Add this meta tag in the <head> section -->
+<meta http-equiv="refresh" content="0; url=trading-signals.html">
+
+<!-- Update the meta description -->
+<meta name="description" content="TradePilot - Get real-time algorithmic trading signals for crypto, forex & equities with precise entry, stop-loss, take-profit and risk management." />
